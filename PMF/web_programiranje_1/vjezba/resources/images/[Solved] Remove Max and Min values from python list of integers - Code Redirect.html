@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="ROBOTS" content="All">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://coderedirect.com/themes/classic/styles/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/index.css">
+        <title>[Solved] Remove Max and Min values from python list of integers - Code Redirect</title>
+    <meta name="description" content="I am not completely green to Python, but I am interested in learning/keeping good practices while I develop my skills.I want to remove the high and low values from a list of numbers, which I know...">
+    <meta property="og:image" content="https://coderedirect.com/themes/classic/styles/images/noimage.jpg">
+    <meta property="og:title" content="Remove Max and Min values from python list of integers - Code Redirect">
+    <meta property="og:site_name" content="Code Redirect">
+    <meta property="og:description" content="I am not completely green to Python, but I am interested in learning/keeping good practices while I develop my skills.I want to remove the high and low values from a list of numbers, which I know...">
+    <meta property="og:url" content="https://coderedirect.com/questions/323974/932/remove-max-and-min-values-from-python-list-of-integers">
+    <meta property="og:type" content="website">
+        <script type="text/javascript">
+        (function(){
+            var bsa_optimize=document.createElement('script');
+            bsa_optimize.type='text/javascript';
+            bsa_optimize.async=true;
+            bsa_optimize.src='https://cdn4.buysellads.net/pub/coderedirect.js?'+(new Date()-new Date()%600000);
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+        })();
+    </script><script type="text/javascript" async="" src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/coderedirect.js"></script>
+</head>
+<body>
+
+
+<div id="header-nav">
+<div class="ten">
+<div class="three column">
+<div class="twoLogo">
+<a href="https://coderedirect.com/" title="Code Redirect"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/logo.png" alt="Code Redirect" width="232" height="55"></a>
+</div>
+</div>
+<div class="fiveinc column">
+<form id="aforms" action="https://coderedirect.com/search.php" method="get">
+<div class="column">
+<div class="search">
+<input id="tagged_input" type="text" class="searchField" name="q" placeholder="Search">
+<input id="submitButton" type="submit" value="Search">
+</div>
+</div>
+</form>
+</div>
+<div class="twoinc column">
+<div class="five column">
+<a class="topMenu"><span><i title="Menu" class="mdi mdi-view-headline"></i></span></a>
+</div>
+<div class="four menuMain">
+<div class="five column">
+<a href="https://coderedirect.com/login.php" class="addMenu nyroModal"><span><i title="Settings" class="mdi mdi-account-outline"></i></span></a>
+</div>
+<div class="five column">
+<a href="https://coderedirect.com/login.php" class="addMenu nyroModal"><span><i title="Ask Question" class="mdi mdi-network-question"></i></span></a>
+</div>
+</div>
+<div class="menuMobile" style="display: none;">
+<div class="topLine"></div>
+<div class="menuMobileIn">
+<ul>
+<li><a href="https://coderedirect.com/">Home</a></li>
+<li><a href="https://coderedirect.com/signup.php" class="nyroModal">Sign Up</a></li>
+<li><a href="https://coderedirect.com/login.php" class="nyroModal">Log In</a></li>
+<li><a href="https://coderedirect.com/login.php" class="nyroModal">Post Your Question</a></li>
+<li><a href="https://coderedirect.com/login.php" class="nyroModal">My Favorites</a></li>
+<li><a href="https://coderedirect.com/login.php" class="nyroModal">Following</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<style>
+    @media only screen and (min-width: 0px) and (min-height: 0px) {
+        div[id^="bsa-zone_1635365692192-6_123456"] {
+            min-width: 320px;
+            min-height: 50px;
+        }
+    }
+    @media only screen and (min-width: 640px) and (min-height: 0px) {
+        div[id^="bsa-zone_1635365692192-6_123456"] {
+            min-width: 728px;
+            min-height: 90px;
+        }
+    }
+    @media only screen and (min-width: 1500px) and (min-height: 0px) {
+        div[id^="bsa-zone_1635365692192-6_123456"] {
+            min-width: 728px;
+            min-height: 90px;
+        }
+    }
+</style>
+<div class="ten column center">
+    <div class="banner">
+        <div id="bsa-zone_1635365692192-6_123456"></div>
+    </div>
+</div>
+
+<div class="main">
+
+<div class="ten">
+
+
+<div class="sevenhalf column">
+<div class="tonine column custom-head">
+    <div class="ten column">
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/python">python</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/list">list</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/max">max</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/min">min</a>
+        </div>
+                <div class="two"></div>
+    </div>
+</div>
+
+<div class="ten white">
+    <div class="ten">
+        <div class="ten column">
+            <div class="ten leftColumn">
+
+                <h1 itemprop="name"><a href="https://coderedirect.com/questions/323974/remove-max-and-min-values-from-python-list-of-integers">Remove Max and Min values from python list of integers</a></h1>
+
+            </div>
+            <div class="ten column grid fw-wrap pb8 mb16 bb bc-black-075">
+                <span>Asked</span> &nbsp;3 Months ago &nbsp;&nbsp; <span>Answers:</span>&nbsp; 5&nbsp;&nbsp; <span> Viewed  </span> &nbsp; 466 times
+                            </div>
+
+                        <div class="ten column">
+                <div class="s-prose js-post-body" itemprop="text">
+<p>I am not completely green to Python, but I am interested in learning/keeping good practices while I develop my skills.</p>
+<p>I want to remove the high and low values from a list of numbers, 
+which I know how to do, but am curious if there is a better/preferred 
+way to do this.</p>
+<pre><code>mylist = [1, 4, 0, 3, 2]
+mylist.sort() #[0, 1, 2, 3, 4]
+trimmed = mylist[1:-1] #[1, 2, 3]
+</code></pre>
+<p>I get the desired answer, but did I get the right answer appropriately?</p>
+</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    @media only screen and (min-width: 0px) and (min-height: 0px) {
+        div[id^="bsa-zone_1634835181123-5_123456"] {
+            min-width: 320px;
+            min-height: 50px;
+        }
+    }
+    @media only screen and (min-width: 640px) and (min-height: 0px) {
+        div[id^="bsa-zone_1634835181123-5_123456"] {
+            min-width: 728px;
+            min-height: 90px;
+        }
+    }
+</style>
+<div style="text-align:center" id="bsa-zone_1634835181123-5_123456"></div>
+
+
+<div class="ten white ">
+<div id="best_answers" class="ten column"><h2>&nbsp;Answers</h2></div>
+<div class="ten white gobu">
+
+
+<div id="divid322241"></div>
+<div class="ten comment odd">
+<div class="toone column">
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons322241" title="This answer is useful">
+<a href="https://coderedirect.com/login.php" class="voted_up nyroModal"><i class="mdi mdi-chevron-up"></i></a>
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="votes_countd" id="votes_countd322241">
+57
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons322241" title="This answer is not useful">
+<a href="https://coderedirect.com/login.php" class="voted_down nyroModal"><i class="mdi mdi-chevron-down"></i></a>
+</span>
+    </div>
+
+            <div class="fc-green-500 ten center voteblock">
+        <svg aria-hidden="true" class="svg-icon iconCheckmarkLg" width="36" height="36" viewBox="0 0 36 36"><path d="M6 14l8 8L30 6v8L14 30l-8-8v-8z"></path></svg>
+    </div>
+        </div>
+<div class="tonine column moremargin">
+            <div class="ten">
+
+
+        <div class="s-prose js-post-body" itemprop="text">
+<p>Here's another way to do it if you don't want to change the order of the items:</p>
+<pre><code>mylist = [1, 4, 0, 3, 2]
+mylist.remove(max(mylist))
+mylist.remove(min(mylist))
+</code></pre>
+<p>Assumes that the high/low don't have any duplicates in the list, or if there are, that it's OK to remove only one of them.</p>
+<p>This will need to do 2-4 passes through the list: two to find the max
+ and min values, and up to 2 to find the values to remove (if they both 
+happen to be at the end of the list). You could reduce this to one by 
+writing a Python loop to find the max and min in a single pass (and 
+remember the index of each so you can delete the items by index after 
+the loop). However, <code>min()</code> and <code>max()</code> are 
+implemented in C, so replacing them with Python code would probably 
+result in lower performance even if it allowed you to reduce the number 
+of passes.</p>
+</div>
+
+                <style>
+            @media only screen and (min-width: 0px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439148419-1_123456"] {
+                    min-width: 300px;
+                    min-height: 250px;
+                }
+            }
+            @media only screen and (min-width: 640px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439148419-1_123456"] {
+                    min-width: 728px;
+                    min-height: 90px;
+                }
+            }
+        </style>
+        <div id="bsa-zone_1635439148419-1_123456"></div>
+        
+
+        
+
+        
+
+        
+        
+    </div>
+    
+    <div class="ten greyFont">
+        Sunday, August  8, 2021
+                        <!--a href="https://coderedirect.com/report.php?id=322241&amp;report=2" class="nyroModal">[flag answer]</a-->
+    </div>
+    <div class="ten">
+        <div class="six">
+            
+                        &nbsp;
+                    </div>
+        <div class="four column answeredby margintop">
+            <div class="ten column">
+                <div class="twoinc column imageMarginer">
+                                                            <a href="https://coderedirect.com/users/100"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/noimage50.png" alt="Packy" width="50" height="50"></a>
+                                                                            </div>
+                <div class="eightinc column">
+                    <div class="ten">
+                        answered 3 Months ago
+                    </div>
+                    <div class="ten">
+                                                <a href="https://coderedirect.com/users/100">Packy</a>
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="ten">
+    <div class="ten column">
+        <div class="ten">
+                    </div>
+    </div>
+</div>
+</div>
+<div id="divid403696"></div>
+<div class="ten comment even">
+<div class="toone column">
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons403696" title="This answer is useful">
+<a href="https://coderedirect.com/login.php" class="voted_up nyroModal"><i class="mdi mdi-chevron-up"></i></a>
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="votes_countd" id="votes_countd403696">
+87
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons403696" title="This answer is not useful">
+<a href="https://coderedirect.com/login.php" class="voted_down nyroModal"><i class="mdi mdi-chevron-down"></i></a>
+</span>
+    </div>
+
+            </div>
+<div class="tonine column moremargin">
+        <div></div>
+            <div class="ten">
+
+
+        <div class="s-prose js-post-body" itemprop="text">
+<p>There's <code>heapq.nlargest()</code>:</p>
+<pre><code>maxvalues = heapq.nlargest(20, lst)
+</code></pre>
+<p>From the doc:</p>
+<blockquote>
+<p><code>heapq.nlargest(n, iterable, key=None)</code></p>
+<blockquote>
+<p>Return a list with the n largest elements from the dataset defined by <code>iterable</code>. <code>key</code>, if provided, specifies a function of one argument that is used to extract a comparison key from each element in the iterable: <code>key=str.lower</code> Equivalent to: <code>sorted(iterable, key=key, reverse=True)[:n]</code></p>
+</blockquote>
+</blockquote>
+<p>Or at the same way use <code>heapq.nsmallest()</code> if you want the smallest.</p>
+<p><strong>IMPORTANT NOTE</strong> from the doc:</p>
+<blockquote>
+<blockquote>
+<p>The latter two functions [<code>nlargest</code> and <code>nsmallest</code>] perform best for smaller values of <code>n</code>. For larger values, it is more efficient to use the <code>sorted()</code> function. Also, when <code>n==1</code>, it is more efficient to use the built-in <code>min()</code> and <code>max()</code> functions.</p>
+</blockquote>
+</blockquote>
+</div>
+
+        
+
+                <style>
+            @media only screen and (min-width: 0px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439183730-6_123456"] {
+                    min-width: 300px;
+                    min-height: 250px;
+                }
+            }
+            @media only screen and (min-width: 640px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439183730-6_123456"] {
+                    min-width: 728px;
+                    min-height: 90px;
+                }
+            }
+        </style>
+        <div id="bsa-zone_1635439183730-6_123456"></div>
+        
+
+        
+
+        
+        
+    </div>
+    
+    <div class="ten greyFont">
+        Tuesday, August 17, 2021
+                        <!--a href="https://coderedirect.com/report.php?id=403696&amp;report=2" class="nyroModal">[flag answer]</a-->
+    </div>
+    <div class="ten">
+        <div class="six">
+            
+                        &nbsp;
+                    </div>
+        <div class="four column answeredby margintop">
+            <div class="ten column">
+                <div class="twoinc column imageMarginer">
+                                                            <a href="https://coderedirect.com/users/1263"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/noimage50.png" alt="Hauke Ingmar Schmidt" width="50" height="50"></a>
+                                                                            </div>
+                <div class="eightinc column">
+                    <div class="ten">
+                        answered 3 Months ago
+                    </div>
+                    <div class="ten">
+                                                <a href="https://coderedirect.com/users/1263">Hauke Ingmar Schmidt</a>
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="ten">
+    <div class="ten column">
+        <div class="ten">
+                    </div>
+    </div>
+</div>
+</div>
+<div id="divid407989"></div>
+<div class="ten comment odd">
+<div class="toone column">
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons407989" title="This answer is useful">
+<a href="https://coderedirect.com/login.php" class="voted_up nyroModal"><i class="mdi mdi-chevron-up"></i></a>
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="votes_countd" id="votes_countd407989">
+34
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons407989" title="This answer is not useful">
+<a href="https://coderedirect.com/login.php" class="voted_down nyroModal"><i class="mdi mdi-chevron-down"></i></a>
+</span>
+    </div>
+
+            </div>
+<div class="tonine column moremargin">
+        <div></div>
+            <div class="ten">
+
+
+        <div class="s-prose js-post-body" itemprop="text">
+<p>You could define a function and call <code>apply</code> passing the function name, this will create a df with min and max as the index names:</p>
+<pre><code>In [203]:
+
+def minMax(x):
+    return pd.Series(index=['min','max'],data=[x.min(),x.max()])
+
+
+df.apply(minMax)
+Out[203]:
+     col1  col2  col3  col4
+min    -5    -7    -2     1
+max     3     5     3     9
+</code></pre>
+<p>If you insist on a list of lists we can transpose the df and convert the values to a list:</p>
+<pre><code>In [206]:
+
+def minMax(x):
+    return pd.Series(index=['min','max'],data=[x.min(),x.max()])
+
+
+df.apply(minMax).T.values.tolist()
+Out[206]:
+[[-5, 3], [-7, 5], [-2, 3], [1, 9]]
+</code></pre>
+<p>The function itself is not entirely necessary as you can use a lambda instead:</p>
+<pre><code>In [209]:
+
+df.apply(lambda x: pd.Series([x.min(), x.max()])).T.values.tolist()
+Out[209]:
+[[-5, 3], [-7, 5], [-2, 3], [1, 9]]
+</code></pre>
+<p>Note also that you can use <code>describe</code> and <code>loc</code> to get what you want:</p>
+<pre><code>In [212]:
+
+df.describe().loc[['min','max']]
+Out[212]:
+     col1  col2  col3  col4
+min    -5    -7    -2     1
+max     3     5     3     9
+</code></pre>
+</div>
+
+        
+
+        
+
+                <style>
+            @media only screen and (min-width: 0px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439237244-3_123456"] {
+                    min-width: 300px;
+                    min-height: 250px;
+                }
+            }
+            @media only screen and (min-width: 640px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439237244-3_123456"] {
+                    min-width: 728px;
+                    min-height: 90px;
+                }
+            }
+        </style>
+        <div id="bsa-zone_1635439237244-3_123456"></div>
+        
+
+        
+        
+    </div>
+    
+    <div class="ten greyFont">
+        Wednesday, August 18, 2021
+                        <!--a href="https://coderedirect.com/report.php?id=407989&amp;report=2" class="nyroModal">[flag answer]</a-->
+    </div>
+    <div class="ten">
+        <div class="six">
+            
+                        &nbsp;
+                    </div>
+        <div class="four column answeredby margintop">
+            <div class="ten column">
+                <div class="twoinc column imageMarginer">
+                                                            <a href="https://coderedirect.com/users/831"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/noimage50.png" alt="Thiago Custodio" width="50" height="50"></a>
+                                                                            </div>
+                <div class="eightinc column">
+                    <div class="ten">
+                        answered 3 Months ago
+                    </div>
+                    <div class="ten">
+                                                <a href="https://coderedirect.com/users/831">Thiago Custodio</a>
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="ten">
+    <div class="ten column">
+        <div class="ten">
+                    </div>
+    </div>
+</div>
+</div>
+<div id="divid412276"></div>
+<div class="ten comment even">
+<div class="toone column">
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons412276" title="This answer is useful">
+<a href="https://coderedirect.com/login.php" class="voted_up nyroModal"><i class="mdi mdi-chevron-up"></i></a>
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="votes_countd" id="votes_countd412276">
+27
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons412276" title="This answer is not useful">
+<a href="https://coderedirect.com/login.php" class="voted_down nyroModal"><i class="mdi mdi-chevron-down"></i></a>
+</span>
+    </div>
+
+            </div>
+<div class="tonine column moremargin">
+        <div></div>
+            <div class="ten">
+
+
+        <div class="s-prose js-post-body" itemprop="text">
+<p><code>max</code> and <code>min</code> function in python accepts a <code>key</code> argument that will find the max of an iterable based on what defined as a key. so, try this:</p>
+<pre><code>max(total_list, key=len)
+</code></pre>
+<p>then you can use <code>total_list.index</code> to find those indexes</p>
+</div>
+
+        
+
+        
+
+        
+
+                <style>
+            @media only screen and (min-width: 0px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439265383-5_123456"] {
+                    min-width: 300px;
+                    min-height: 250px;
+                }
+            }
+            @media only screen and (min-width: 640px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635439265383-5_123456"] {
+                    min-width: 728px;
+                    min-height: 90px;
+                }
+            }
+        </style>
+        <div id="bsa-zone_1635439265383-5_123456"></div>
+        
+        
+    </div>
+    
+    <div class="ten greyFont">
+        Thursday, August 19, 2021
+                        <!--a href="https://coderedirect.com/report.php?id=412276&amp;report=2" class="nyroModal">[flag answer]</a-->
+    </div>
+    <div class="ten">
+        <div class="six">
+            
+                        &nbsp;
+                    </div>
+        <div class="four column answeredby margintop">
+            <div class="ten column">
+                <div class="twoinc column imageMarginer">
+                                                            <a href="https://coderedirect.com/users/238"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/noimage50.png" alt="Akdeniz" width="50" height="50"></a>
+                                                                            </div>
+                <div class="eightinc column">
+                    <div class="ten">
+                        answered 3 Months ago
+                    </div>
+                    <div class="ten">
+                                                <a href="https://coderedirect.com/users/238">Akdeniz</a>
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="ten">
+    <div class="ten column">
+        <div class="ten">
+                    </div>
+    </div>
+</div>
+</div>
+<div id="divid522436"></div>
+<div class="ten comment odd">
+<div class="toone column">
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons522436" title="This answer is useful">
+<a href="https://coderedirect.com/login.php" class="voted_up nyroModal"><i class="mdi mdi-chevron-up"></i></a>
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="votes_countd" id="votes_countd522436">
+86
+</span>
+    </div>
+    <div class="ten center voteblock">
+<span class="vote_buttons" id="voted_buttons522436" title="This answer is not useful">
+<a href="https://coderedirect.com/login.php" class="voted_down nyroModal"><i class="mdi mdi-chevron-down"></i></a>
+</span>
+    </div>
+
+            </div>
+<div class="tonine column moremargin">
+        <div></div>
+            <div class="ten">
+
+
+        <div class="s-prose js-post-body" itemprop="text">
+<p><code>None</code> is being returned</p>
+<pre><code>&gt;&gt;&gt; print min([None, 1,2])
+None
+&gt;&gt;&gt; None &lt; 1
+True
+</code></pre>
+<p>If you want to return <code>1</code> you have to filter the <code>None</code> away:</p>
+<pre><code>&gt;&gt;&gt; L = [None, 1, 2]
+&gt;&gt;&gt; min(x for x in L if x is not None)
+1
+</code></pre>
+</div>
+
+        
+
+        
+
+        
+
+        
+                <style>
+            @media only screen and (min-width: 0px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635539867990-7_123456"] {
+                    min-width: 300px;
+                    min-height: 250px;
+                }
+            }
+            @media only screen and (min-width: 640px) and (min-height: 0px) {
+                div[id^="bsa-zone_1635539867990-7_123456"] {
+                    min-width: 728px;
+                    min-height: 90px;
+                }
+            }
+        </style>
+        <div id="bsa-zone_1635539867990-7_123456"></div>
+        
+    </div>
+    
+    <div class="ten greyFont">
+        Saturday, September 18, 2021
+                        <!--a href="https://coderedirect.com/report.php?id=522436&amp;report=2" class="nyroModal">[flag answer]</a-->
+    </div>
+    <div class="ten">
+        <div class="six">
+            
+                        &nbsp;
+                    </div>
+        <div class="four column answeredby margintop">
+            <div class="ten column">
+                <div class="twoinc column imageMarginer">
+                                                            <a href="https://coderedirect.com/users/1901"><img src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/noimage50.png" alt="Krzysztof Kaczor" width="50" height="50"></a>
+                                                                            </div>
+                <div class="eightinc column">
+                    <div class="ten">
+                        answered 2 Months ago
+                    </div>
+                    <div class="ten">
+                                                <a href="https://coderedirect.com/users/1901">Krzysztof Kaczor</a>
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="ten">
+    <div class="ten column">
+        <div class="ten">
+                    </div>
+    </div>
+</div>
+</div>
+<div class="ten white">
+        <div class="ten column infoMargin">
+        Only authorized users can answer the question. Please <a href="https://coderedirect.com/login.php" class="nyroModal">sign in</a> first, or register a <a href="https://coderedirect.com/signup.php" class="nyroModal">free account</a>.
+    </div>
+    <div class="ten column infoMargin">
+        Not the answer you're looking for? Browse other questions tagged :
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/python">python</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/list">list</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/max">max</a>
+        </div>
+                <div class="grid ps-relative">
+            <a rel="tag" class="post-tag js-gps-track" href="https://coderedirect.com/questions/tagged/min">min</a>
+        </div>
+                &nbsp;
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+<div class="twohalf column">
+    <div class="sidebarZero">
+        <div class="headers center" style="font-weight: bold">Share</div>
+        <div class="ten column center">
+            <div class="icons">
+                <a class="twitter pop tooltip" title="Share this page on Twitter" href="#" onclick="(function() {if (!window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="facebook pop tooltip" title="Share this page on Facebook" href="#" onclick="(function() {if (!window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="stumbleupon pop tooltip" title="Share this page on Stumbleupon" href="#" onclick="(function() {if (!window.open('http://www.stumbleupon.com/submit?url=' + encodeURIComponent(window.location) + '&amp;title=' + encodeURIComponent(document.title) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="digg pop tooltip" title="Share this page on Digg" href="#" onclick="(function() {if (!window.open('http://digg.com/submit?url=' + encodeURIComponent(window.location) + '&amp;title=' + encodeURIComponent(document.title) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="reddit pop tooltip" title="Share this page on Reddit" href="#" onclick="(function() {if (!window.open('http://reddit.com/submit?url=' + encodeURIComponent(window.location) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="tumblr pop tooltip" title="Share this page on Tumblr" href="#" onclick="(function() {if (!window.open('http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent(window.location) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                <a class="linkedin pop tooltip" title="Share this page on Linkedin" href="#" onclick="(function() {if (!window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=' + encodeURIComponent(window.location) + '&amp;title=' + encodeURIComponent(document.title) + '', 'enter', 'left=100,top=120;location=yes,links=no,scrollbars=no,toolbar=no,width=690,height=360')) location.href = 'jump=yes'})();return false;"></a>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="sidebarSecond">
+
+
+
+                <div class="headers" style="font-weight: bold">Related Answers</div>
+        <div class="ten column center">
+                        
+
+            <div class="related js-gps-related-questions" data-tracker="rq=8323">
+                                <div class="spacer spacefirst">
+                                            <a href="https://coderedirect.com/questions/8323/maximum-and-minimum-integer-from-array-excluding-null-or-zero-values">
+                            <div class="answer-votes answered-accepted extra-large">32</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/8323/maximum-and-minimum-integer-from-array-excluding-null-or-zero-values" class="question-hyperlink">
+                            Maximum and Minimum integer from array excluding NULL or ZERO values
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=50676">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/50676/maximum-and-minimum-values-for-ints">
+                            <div class="answer-votes answered-accepted extra-large">19</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/50676/maximum-and-minimum-values-for-ints" class="question-hyperlink">
+                            Maximum and Minimum values for ints
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=54226">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/54226/from-list-of-integers-get-number-closest-to-a-given-value">
+                            <div class="answer-votes answered-accepted extra-large">26</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/54226/from-list-of-integers-get-number-closest-to-a-given-value" class="question-hyperlink">
+                            from list of integers, get number closest to a given value
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=299642">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/299642/maximum-and-minimum-value-of-c-types-integers-from-python">
+                            <div class="answer-votes answered-accepted extra-large">65</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/299642/maximum-and-minimum-value-of-c-types-integers-from-python" class="question-hyperlink">
+                            Maximum and minimum value of C types integers from Python
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=403174">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/403174/remove-an-element-from-a-python-list-of-lists-in-pyspark-dataframe">
+                            <div class="answer-votes answered-accepted extra-large">83</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/403174/remove-an-element-from-a-python-list-of-lists-in-pyspark-dataframe" class="question-hyperlink">
+                            Remove an element from a Python list of lists in PySpark DataFrame
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=403336">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/403336/remove-leading-and-trailing-zeros-from-multidimensional-list-in-python">
+                            <div class="answer-votes answered-accepted extra-large">19</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/403336/remove-leading-and-trailing-zeros-from-multidimensional-list-in-python" class="question-hyperlink">
+                            Remove leading and trailing zeros from multidimensional list in Python [closed]
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=405429">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/405429/filter-max-20-values-from-a-list-of-integers">
+                            <div class="answer-votes answered-accepted extra-large">21</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/405429/filter-max-20-values-from-a-list-of-integers" class="question-hyperlink">
+                            Filter max 20 values from a list of integers
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=409722">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/409722/max-and-min-value-for-each-colum-of-one-dataframe">
+                            <div class="answer-votes answered-accepted extra-large">23</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/409722/max-and-min-value-for-each-colum-of-one-dataframe" class="question-hyperlink">
+                            Max and Min value for each colum of one Dataframe
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=468250">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/468250/how-to-determine-the-max-and-min-values-read-in-from-a-text-file-in-java">
+                            <div class="answer-votes answered-accepted extra-large">13</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/468250/how-to-determine-the-max-and-min-values-read-in-from-a-text-file-in-java" class="question-hyperlink">
+                            How to Determine the Max and Min Values Read in From a Text File in Java
+                        </a>
+                                            </div>
+
+                                    </div>
+                
+
+            <div class="related js-gps-related-questions" data-tracker="rq=524052">
+                                    <div class="spacer">
+                                                <a href="https://coderedirect.com/questions/524052/python-usable-max-and-min-values">
+                            <div class="answer-votes answered-accepted extra-large">9</div>
+                        </a>
+                                                <a href="https://coderedirect.com/questions/524052/python-usable-max-and-min-values" class="question-hyperlink">
+                            Python: Usable Max and Min values
+                        </a>
+                                            </div>
+
+                                    </div>
+                            </div>
+
+        </div>
+
+        
+        <div class="sidebarSecond">
+
+            <div class="ten column center">
+                <style>
+                    @media only screen and (min-width: 0px) and (min-height: 0px) {
+                        div[id^="bsa-zone_1634835217089-5_123456"] {
+                            min-width: 300px;
+                            min-height: 250px;
+                        }
+                    }
+                    @media only screen and (min-width: 640px) and (min-height: 0px) {
+                        div[id^="bsa-zone_1634835217089-5_123456"] {
+                            min-width: 300px;
+                            min-height: 250px;
+                        }
+                    }
+                </style>
+                <div id="bsa-zone_1634835217089-5_123456"></div>
+
+            </div>
+        </div>
+        <div class="sidebarSecond">
+
+                        <div class="header center" style="font-weight: bold">Top Answers Related To <br> <h3>python,list,max,min</h3></div>
+            <div class="ten column center">
+                                
+
+                <div class="related js-gps-related-questions" data-tracker="rq=54455">
+
+                                        <div class="spacer spacefirst">
+                        
+                            <a href="https://coderedirect.com/questions/54455/min-and-max-in-c">
+                                <div class="answer-votes answered-accepted extra-large">22</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/54455/min-and-max-in-c" class="question-hyperlink">
+                                MIN and MAX in C
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=173579">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/173579/find-min-max-and-average-of-a-list">
+                                <div class="answer-votes answered-accepted extra-large">25</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/173579/find-min-max-and-average-of-a-list" class="question-hyperlink">
+                                Find min, max, and average of a list
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=214412">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/214412/min-and-max-value-of-input-in-angular4-application">
+                                <div class="answer-votes answered-accepted extra-large">47</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/214412/min-and-max-value-of-input-in-angular4-application" class="question-hyperlink">
+                                Min and max value of input in angular4 application
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=291570">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/291570/python-check-if-list-of-lists-of-lists-contains-a-specific-list">
+                                <div class="answer-votes answered-accepted extra-large">41</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/291570/python-check-if-list-of-lists-of-lists-contains-a-specific-list" class="question-hyperlink">
+                                Python - Check if list of lists of lists contains a specific list
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=322537">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/322537/python-find-index-of-minimum-item-in-list-of-floats">
+                                <div class="answer-votes answered-accepted extra-large">32</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/322537/python-find-index-of-minimum-item-in-list-of-floats" class="question-hyperlink">
+                                Python: Find index of minimum item in list of floats [duplicate]
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=414009">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/414009/finding-the-longest-and-the-shortest-lists-within-a-list-in-python">
+                                <div class="answer-votes answered-accepted extra-large">17</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/414009/finding-the-longest-and-the-shortest-lists-within-a-list-in-python" class="question-hyperlink">
+                                Finding the longest and the shortest lists within a list in Python [duplicate]
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=467340">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/467340/max-min-giving-me-wrong-values-in-mysql">
+                                <div class="answer-votes answered-accepted extra-large">19</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/467340/max-min-giving-me-wrong-values-in-mysql" class="question-hyperlink">
+                                MAX/MIN giving me wrong values in mysql
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=524224">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/524224/list-minimum-in-python-with-none">
+                                <div class="answer-votes answered-accepted extra-large">6</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/524224/list-minimum-in-python-with-none" class="question-hyperlink">
+                                List minimum in Python with None?
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=547302">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/547302/min-max-of-collections-containing-nan-handling-incomparability-in-ordering">
+                                <div class="answer-votes answered-accepted extra-large">6</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/547302/min-max-of-collections-containing-nan-handling-incomparability-in-ordering" class="question-hyperlink">
+                                min/max of collections containing NaN (handling incomparability in ordering)
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                <div class="related js-gps-related-questions" data-tracker="rq=581731">
+
+                                            <div class="spacer">
+                            
+                            <a href="https://coderedirect.com/questions/581731/max-in-a-list-with-two-conditions">
+                                <div class="answer-votes answered-accepted extra-large">6</div>
+                            </a>
+                            <a href="https://coderedirect.com/questions/581731/max-in-a-list-with-two-conditions" class="question-hyperlink">
+                                Max in a list with two conditions
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                                    </div>
+
+                            </div>
+
+
+
+
+                        
+            <style>
+                @media only screen and (min-width: 0px) and (min-height: 0px) {
+                    div[id^="bsa-zone_1635368601868-2_123456"] {
+                        min-width: 300px;
+                        min-height: 250px;
+                    }
+                }
+                @media only screen and (min-width: 640px) and (min-height: 0px) {
+                    div[id^="bsa-zone_1635368601868-2_123456"] {
+                        min-width: 300px;
+                        min-height: 250px;
+                    }
+                }
+                @media (max-width:767px) {
+                    .hidden-xs {
+                        display: none!important
+                    }
+                }
+            </style>
+            <div id="bsa-zone_1635368601868-2_123456"></div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/js.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87290167-4');
+</script><script src="[Solved]%20Remove%20Max%20and%20Min%20values%20from%20python%20list%20of%20integers%20-%20Code%20Redirect_files/jquery.js"></script>
+
+
+<script>;(function(e,t,n){function s(t,n){this.bodyOverflowX;this.callbacks={hide:[],show:[]};this.checkInterval=null;this.Content;this.$el=e(t);this.$elProxy;this.elProxyPosition;this.enabled=true;this.options=e.extend({},i,n);this.mouseIsOverProxy=false;this.namespace="tooltipster-"+Math.round(Math.random()*1e5);this.Status="hidden";this.timerHide=null;this.timerShow=null;this.$tooltip;this.options.iconTheme=this.options.iconTheme.replace(".","");this.options.theme=this.options.theme.replace(".","");this._init()}function o(t,n){var r=true;e.each(t,function(e,i){if(typeof n[e]==="undefined"||t[e]!==n[e]){r=false;return false}});return r}function f(){return!a&&u}function l(){var e=n.body||n.documentElement,t=e.style,r="transition";if(typeof t[r]=="string"){return true}v=["Moz","Webkit","Khtml","O","ms"],r=r.charAt(0).toUpperCase()+r.substr(1);for(var i=0;i<v.length;i++){if(typeof t[v[i]+r]=="string"){return true}}return false}var r="tooltipster",i={animation:"fade",arrow:true,arrowColor:"",autoClose:true,content:null,contentAsHTML:false,contentCloning:true,debug:true,delay:200,minWidth:0,maxWidth:null,functionInit:function(e,t){},functionBefore:function(e,t){t()},functionReady:function(e,t){},functionAfter:function(e){},hideOnClick:false,icon:"(?)",iconCloning:true,iconDesktop:false,iconTouch:false,iconTheme:"tooltipster-icon",interactive:false,interactiveTolerance:350,multiple:false,offsetX:0,offsetY:0,onlyOne:false,position:"top",positionTracker:false,positionTrackerCallback:function(e){if(this.option("trigger")=="hover"&&this.option("autoClose")){this.hide()}},restoration:"current",speed:350,timer:0,theme:"tooltipster-default",touchDevices:true,trigger:"hover",updateAnimation:true};s.prototype={_init:function(){var t=this;if(n.querySelector){var r=null;if(t.$el.data("tooltipster-initialTitle")===undefined){r=t.$el.attr("title");if(r===undefined)r=null;t.$el.data("tooltipster-initialTitle",r)}if(t.options.content!==null){t._content_set(t.options.content)}else{t._content_set(r)}var i=t.options.functionInit.call(t.$el,t.$el,t.Content);if(typeof i!=="undefined")t._content_set(i);t.$el.removeAttr("title").addClass("tooltipstered");if(!u&&t.options.iconDesktop||u&&t.options.iconTouch){if(typeof t.options.icon==="string"){t.$elProxy=e('<span class="'+t.options.iconTheme+'"></span>');t.$elProxy.text(t.options.icon)}else{if(t.options.iconCloning)t.$elProxy=t.options.icon.clone(true);else t.$elProxy=t.options.icon}t.$elProxy.insertAfter(t.$el)}else{t.$elProxy=t.$el}if(t.options.trigger=="hover"){t.$elProxy.on("mouseenter."+t.namespace,function(){if(!f()||t.options.touchDevices){t.mouseIsOverProxy=true;t._show()}}).on("mouseleave."+t.namespace,function(){if(!f()||t.options.touchDevices){t.mouseIsOverProxy=false}});if(u&&t.options.touchDevices){t.$elProxy.on("touchstart."+t.namespace,function(){t._showNow()})}}else if(t.options.trigger=="click"){t.$elProxy.on("click."+t.namespace,function(){if(!f()||t.options.touchDevices){t._show()}})}}},_show:function(){var e=this;if(e.Status!="shown"&&e.Status!="appearing"){if(e.options.delay){e.timerShow=setTimeout(function(){if(e.options.trigger=="click"||e.options.trigger=="hover"&&e.mouseIsOverProxy){e._showNow()}},e.options.delay)}else e._showNow()}},_showNow:function(n){var r=this;r.options.functionBefore.call(r.$el,r.$el,function(){if(r.enabled&&r.Content!==null){if(n)r.callbacks.show.push(n);r.callbacks.hide=[];clearTimeout(r.timerShow);r.timerShow=null;clearTimeout(r.timerHide);r.timerHide=null;if(r.options.onlyOne){e(".tooltipstered").not(r.$el).each(function(t,n){var r=e(n),i=r.data("tooltipster-ns");e.each(i,function(e,t){var n=r.data(t),i=n.status(),s=n.option("autoClose");if(i!=="hidden"&&i!=="disappearing"&&s){n.hide()}})})}var i=function(){r.Status="shown";e.each(r.callbacks.show,function(e,t){t.call(r.$el)});r.callbacks.show=[]};if(r.Status!=="hidden"){var s=0;if(r.Status==="disappearing"){r.Status="appearing";if(l()){r.$tooltip.clearQueue().removeClass("tooltipster-dying").addClass("tooltipster-"+r.options.animation+"-show");if(r.options.speed>0)r.$tooltip.delay(r.options.speed);r.$tooltip.queue(i)}else{r.$tooltip.stop().fadeIn(i)}}else if(r.Status==="shown"){i()}}else{r.Status="appearing";var s=r.options.speed;r.bodyOverflowX=e("body").css("overflow-x");e("body").css("overflow-x","hidden");var o="tooltipster-"+r.options.animation,a="-webkit-transition-duration: "+r.options.speed+"ms; -webkit-animation-duration: "+r.options.speed+"ms; -moz-transition-duration: "+r.options.speed+"ms; -moz-animation-duration: "+r.options.speed+"ms; -o-transition-duration: "+r.options.speed+"ms; -o-animation-duration: "+r.options.speed+"ms; -ms-transition-duration: "+r.options.speed+"ms; -ms-animation-duration: "+r.options.speed+"ms; transition-duration: "+r.options.speed+"ms; animation-duration: "+r.options.speed+"ms;",f=r.options.minWidth?"min-width:"+Math.round(r.options.minWidth)+"px;":"",c=r.options.maxWidth?"max-width:"+Math.round(r.options.maxWidth)+"px;":"",h=r.options.interactive?"pointer-events: auto;":"";r.$tooltip=e('<div class="tooltipster-base '+r.options.theme+'" style="'+f+" "+c+" "+h+" "+a+'"><div class="tooltipster-content"></div></div>');if(l())r.$tooltip.addClass(o);r._content_insert();r.$tooltip.appendTo("body");r.reposition();r.options.functionReady.call(r.$el,r.$el,r.$tooltip);if(l()){r.$tooltip.addClass(o+"-show");if(r.options.speed>0)r.$tooltip.delay(r.options.speed);r.$tooltip.queue(i)}else{r.$tooltip.css("display","none").fadeIn(r.options.speed,i)}r._interval_set();e(t).on("scroll."+r.namespace+" resize."+r.namespace,function(){r.reposition()});if(r.options.autoClose){e("body").off("."+r.namespace);if(r.options.trigger=="hover"){if(u){setTimeout(function(){e("body").on("touchstart."+r.namespace,function(){r.hide()})},0)}if(r.options.interactive){if(u){r.$tooltip.on("touchstart."+r.namespace,function(e){e.stopPropagation()})}var p=null;r.$elProxy.add(r.$tooltip).on("mouseleave."+r.namespace+"-autoClose",function(){clearTimeout(p);p=setTimeout(function(){r.hide()},r.options.interactiveTolerance)}).on("mouseenter."+r.namespace+"-autoClose",function(){clearTimeout(p)})}else{r.$elProxy.on("mouseleave."+r.namespace+"-autoClose",function(){r.hide()})}if(r.options.hideOnClick){r.$elProxy.on("click."+r.namespace+"-autoClose",function(){r.hide()})}}else if(r.options.trigger=="click"){setTimeout(function(){e("body").on("click."+r.namespace+" touchstart."+r.namespace,function(){r.hide()})},0);if(r.options.interactive){r.$tooltip.on("click."+r.namespace+" touchstart."+r.namespace,function(e){e.stopPropagation()})}}}}if(r.options.timer>0){r.timerHide=setTimeout(function(){r.timerHide=null;r.hide()},r.options.timer+s)}}})},_interval_set:function(){var t=this;t.checkInterval=setInterval(function(){if(e("body").find(t.$el).length===0||e("body").find(t.$elProxy).length===0||t.Status=="hidden"||e("body").find(t.$tooltip).length===0){if(t.Status=="shown"||t.Status=="appearing")t.hide();t._interval_cancel()}else{if(t.options.positionTracker){var n=t._repositionInfo(t.$elProxy),r=false;if(o(n.dimension,t.elProxyPosition.dimension)){if(t.$elProxy.css("position")==="fixed"){if(o(n.position,t.elProxyPosition.position))r=true}else{if(o(n.offset,t.elProxyPosition.offset))r=true}}if(!r){t.reposition();t.options.positionTrackerCallback.call(t,t.$el)}}}},200)},_interval_cancel:function(){clearInterval(this.checkInterval);this.checkInterval=null},_content_set:function(e){if(typeof e==="object"&&e!==null&&this.options.contentCloning){e=e.clone(true)}this.Content=e},_content_insert:function(){var e=this,t=this.$tooltip.find(".tooltipster-content");if(typeof e.Content==="string"&&!e.options.contentAsHTML){t.text(e.Content)}else{t.empty().append(e.Content)}},_update:function(e){var t=this;t._content_set(e);if(t.Content!==null){if(t.Status!=="hidden"){t._content_insert();t.reposition();if(t.options.updateAnimation){if(l()){t.$tooltip.css({width:"","-webkit-transition":"all "+t.options.speed+"ms, width 0ms, height 0ms, left 0ms, top 0ms","-moz-transition":"all "+t.options.speed+"ms, width 0ms, height 0ms, left 0ms, top 0ms","-o-transition":"all "+t.options.speed+"ms, width 0ms, height 0ms, left 0ms, top 0ms","-ms-transition":"all "+t.options.speed+"ms, width 0ms, height 0ms, left 0ms, top 0ms",transition:"all "+t.options.speed+"ms, width 0ms, height 0ms, left 0ms, top 0ms"}).addClass("tooltipster-content-changing");setTimeout(function(){if(t.Status!="hidden"){t.$tooltip.removeClass("tooltipster-content-changing");setTimeout(function(){if(t.Status!=="hidden"){t.$tooltip.css({"-webkit-transition":t.options.speed+"ms","-moz-transition":t.options.speed+"ms","-o-transition":t.options.speed+"ms","-ms-transition":t.options.speed+"ms",transition:t.options.speed+"ms"})}},t.options.speed)}},t.options.speed)}else{t.$tooltip.fadeTo(t.options.speed,.5,function(){if(t.Status!="hidden"){t.$tooltip.fadeTo(t.options.speed,1)}})}}}}else{t.hide()}},_repositionInfo:function(e){return{dimension:{height:e.outerHeight(false),width:e.outerWidth(false)},offset:e.offset(),position:{left:parseInt(e.css("left")),top:parseInt(e.css("top"))}}},hide:function(n){var r=this;if(n)r.callbacks.hide.push(n);r.callbacks.show=[];clearTimeout(r.timerShow);r.timerShow=null;clearTimeout(r.timerHide);r.timerHide=null;var i=function(){e.each(r.callbacks.hide,function(e,t){t.call(r.$el)});r.callbacks.hide=[]};if(r.Status=="shown"||r.Status=="appearing"){r.Status="disappearing";var s=function(){r.Status="hidden";if(typeof r.Content=="object"&&r.Content!==null){r.Content.detach()}r.$tooltip.remove();r.$tooltip=null;e(t).off("."+r.namespace);e("body").off("."+r.namespace).css("overflow-x",r.bodyOverflowX);e("body").off("."+r.namespace);r.$elProxy.off("."+r.namespace+"-autoClose");r.options.functionAfter.call(r.$el,r.$el);i()};if(l()){r.$tooltip.clearQueue().removeClass("tooltipster-"+r.options.animation+"-show").addClass("tooltipster-dying");if(r.options.speed>0)r.$tooltip.delay(r.options.speed);r.$tooltip.queue(s)}else{r.$tooltip.stop().fadeOut(r.options.speed,s)}}else if(r.Status=="hidden"){i()}return r},show:function(e){this._showNow(e);return this},update:function(e){return this.content(e)},content:function(e){if(typeof e==="undefined"){return this.Content}else{this._update(e);return this}},reposition:function(){var n=this;if(e("body").find(n.$tooltip).length!==0){n.$tooltip.css("width","");n.elProxyPosition=n._repositionInfo(n.$elProxy);var r=null,i=e(t).width(),s=n.elProxyPosition,o=n.$tooltip.outerWidth(false),u=n.$tooltip.innerWidth()+1,a=n.$tooltip.outerHeight(false);if(n.$elProxy.is("area")){var f=n.$elProxy.attr("shape"),l=n.$elProxy.parent().attr("name"),c=e('img[usemap="#'+l+'"]'),h=c.offset().left,p=c.offset().top,d=n.$elProxy.attr("coords")!==undefined?n.$elProxy.attr("coords").split(","):undefined;if(f=="circle"){var v=parseInt(d[0]),m=parseInt(d[1]),g=parseInt(d[2]);s.dimension.height=g*2;s.dimension.width=g*2;s.offset.top=p+m-g;s.offset.left=h+v-g}else if(f=="rect"){var v=parseInt(d[0]),m=parseInt(d[1]),y=parseInt(d[2]),b=parseInt(d[3]);s.dimension.height=b-m;s.dimension.width=y-v;s.offset.top=p+m;s.offset.left=h+v}else if(f=="poly"){var w=[],E=[],S=0,x=0,T=0,N=0,C="even";for(var k=0;k<d.length;k++){var L=parseInt(d[k]);if(C=="even"){if(L>T){T=L;if(k===0){S=T}}if(L<S){S=L}C="odd"}else{if(L>N){N=L;if(k==1){x=N}}if(L<x){x=L}C="even"}}s.dimension.height=N-x;s.dimension.width=T-S;s.offset.top=p+x;s.offset.left=h+S}else{s.dimension.height=c.outerHeight(false);s.dimension.width=c.outerWidth(false);s.offset.top=p;s.offset.left=h}}var A=0,O=0,M=0,_=parseInt(n.options.offsetY),D=parseInt(n.options.offsetX),P=n.options.position;function H(){var n=e(t).scrollLeft();if(A-n<0){r=A-n;A=n}if(A+o-n>i){r=A-(i+n-o);A=i+n-o}}function B(n,r){if(s.offset.top-e(t).scrollTop()-a-_-12<0&&r.indexOf("top")>-1){P=n}if(s.offset.top+s.dimension.height+a+12+_>e(t).scrollTop()+e(t).height()&&r.indexOf("bottom")>-1){P=n;M=s.offset.top-a-_-12}}if(P=="top"){var j=s.offset.left+o-(s.offset.left+s.dimension.width);A=s.offset.left+D-j/2;M=s.offset.top-a-_-12;H();B("bottom","top")}if(P=="top-left"){A=s.offset.left+D;M=s.offset.top-a-_-12;H();B("bottom-left","top-left")}if(P=="top-right"){A=s.offset.left+s.dimension.width+D-o;M=s.offset.top-a-_-12;H();B("bottom-right","top-right")}if(P=="bottom"){var j=s.offset.left+o-(s.offset.left+s.dimension.width);A=s.offset.left-j/2+D;M=s.offset.top+s.dimension.height+_+12;H();B("top","bottom")}if(P=="bottom-left"){A=s.offset.left+D;M=s.offset.top+s.dimension.height+_+12;H();B("top-left","bottom-left")}if(P=="bottom-right"){A=s.offset.left+s.dimension.width+D-o;M=s.offset.top+s.dimension.height+_+12;H();B("top-right","bottom-right")}if(P=="left"){A=s.offset.left-D-o-12;O=s.offset.left+D+s.dimension.width+12;var F=s.offset.top+a-(s.offset.top+s.dimension.height);M=s.offset.top-F/2-_;if(A<0&&O+o>i){var I=parseFloat(n.$tooltip.css("border-width"))*2,q=o+A-I;n.$tooltip.css("width",q+"px");a=n.$tooltip.outerHeight(false);A=s.offset.left-D-q-12-I;F=s.offset.top+a-(s.offset.top+s.dimension.height);M=s.offset.top-F/2-_}else if(A<0){A=s.offset.left+D+s.dimension.width+12;r="left"}}if(P=="right"){A=s.offset.left+D+s.dimension.width+12;O=s.offset.left-D-o-12;var F=s.offset.top+a-(s.offset.top+s.dimension.height);M=s.offset.top-F/2-_;if(A+o>i&&O<0){var I=parseFloat(n.$tooltip.css("border-width"))*2,q=i-A-I;n.$tooltip.css("width",q+"px");a=n.$tooltip.outerHeight(false);F=s.offset.top+a-(s.offset.top+s.dimension.height);M=s.offset.top-F/2-_}else if(A+o>i){A=s.offset.left-D-o-12;r="right"}}if(n.options.arrow){var R="tooltipster-arrow-"+P;if(n.options.arrowColor.length<1){var U=n.$tooltip.css("background-color")}else{var U=n.options.arrowColor}if(!r){r=""}else if(r=="left"){R="tooltipster-arrow-right";r=""}else if(r=="right"){R="tooltipster-arrow-left";r=""}else{r="left:"+Math.round(r)+"px;"}if(P=="top"||P=="top-left"||P=="top-right"){var z=parseFloat(n.$tooltip.css("border-bottom-width")),W=n.$tooltip.css("border-bottom-color")}else if(P=="bottom"||P=="bottom-left"||P=="bottom-right"){var z=parseFloat(n.$tooltip.css("border-top-width")),W=n.$tooltip.css("border-top-color")}else if(P=="left"){var z=parseFloat(n.$tooltip.css("border-right-width")),W=n.$tooltip.css("border-right-color")}else if(P=="right"){var z=parseFloat(n.$tooltip.css("border-left-width")),W=n.$tooltip.css("border-left-color")}else{var z=parseFloat(n.$tooltip.css("border-bottom-width")),W=n.$tooltip.css("border-bottom-color")}if(z>1){z++}var X="";if(z!==0){var V="",J="border-color: "+W+";";if(R.indexOf("bottom")!==-1){V="margin-top: -"+Math.round(z)+"px;"}else if(R.indexOf("top")!==-1){V="margin-bottom: -"+Math.round(z)+"px;"}else if(R.indexOf("left")!==-1){V="margin-right: -"+Math.round(z)+"px;"}else if(R.indexOf("right")!==-1){V="margin-left: -"+Math.round(z)+"px;"}X='<span class="tooltipster-arrow-border" style="'+V+" "+J+';"></span>'}n.$tooltip.find(".tooltipster-arrow").remove();var K='<div class="'+R+' tooltipster-arrow" style="'+r+'">'+X+'<span style="border-color:'+U+';"></span></div>';n.$tooltip.append(K)}n.$tooltip.css({top:Math.round(M)+"px",left:Math.round(A)+"px"})}return n},enable:function(){this.enabled=true;return this},disable:function(){this.hide();this.enabled=false;return this},destroy:function(){var t=this;t.hide();if(t.$el[0]!==t.$elProxy[0]){t.$elProxy.remove()}t.$el.removeData(t.namespace).off("."+t.namespace);var n=t.$el.data("tooltipster-ns");if(n.length===1){var r=null;if(t.options.restoration==="previous"){r=t.$el.data("tooltipster-initialTitle")}else if(t.options.restoration==="current"){r=typeof t.Content==="string"?t.Content:e("<div></div>").append(t.Content).html()}if(r){t.$el.attr("title",r)}t.$el.removeClass("tooltipstered").removeData("tooltipster-ns").removeData("tooltipster-initialTitle")}else{n=e.grep(n,function(e,n){return e!==t.namespace});t.$el.data("tooltipster-ns",n)}return t},elementIcon:function(){return this.$el[0]!==this.$elProxy[0]?this.$elProxy[0]:undefined},elementTooltip:function(){return this.$tooltip?this.$tooltip[0]:undefined},option:function(e,t){if(typeof t=="undefined")return this.options[e];else{this.options[e]=t;return this}},status:function(){return this.Status}};e.fn[r]=function(){var t=arguments;if(this.length===0){if(typeof t[0]==="string"){var n=true;switch(t[0]){case"setDefaults":e.extend(i,t[1]);break;default:n=false;break}if(n)return true;else return this}else{return this}}else{if(typeof t[0]==="string"){var r="#*$~&";this.each(function(){var n=e(this).data("tooltipster-ns"),i=n?e(this).data(n[0]):null;if(i){if(typeof i[t[0]]==="function"){var s=i[t[0]](t[1],t[2])}else{throw new Error('Unknown method .tooltipster("'+t[0]+'")')}if(s!==i){r=s;return false}}else{throw new Error("You called Tooltipster's \""+t[0]+'" method on an uninitialized element')}});return r!=="#*$~&"?r:this}else{var o=[],u=t[0]&&typeof t[0].multiple!=="undefined",a=u&&t[0].multiple||!u&&i.multiple,f=t[0]&&typeof t[0].debug!=="undefined",l=f&&t[0].debug||!f&&i.debug;this.each(function(){var n=false,r=e(this).data("tooltipster-ns"),i=null;if(!r){n=true}else if(a){n=true}else if(l){console.log('Tooltipster: one or more tooltips are already attached to this element: ignoring. Use the "multiple" option to attach more tooltips.')}if(n){i=new s(this,t[0]);if(!r)r=[];r.push(i.namespace);e(this).data("tooltipster-ns",r);e(this).data(i.namespace,i)}o.push(i)});if(a)return o;else return this}}};var u=!!("ontouchstart"in t);var a=false;e("body").one("mousemove",function(){a=true})})(jQuery,window,document);
+    !function(){function t(){d&&function(t){function n(e){"readystatechange"==e.type&&"complete"!=u.readyState||(("load"==e.type?o:u)[s](i+e.type,n,!1),!r&&(r=!0)&&t.call(o,e.type||e))}var e=u.addEventListener,r=!1,a=!0,l=e?"addEventListener":"attachEvent",s=e?"removeEventListener":"detachEvent",i=e?"":"on";if("complete"==u.readyState)t.call(o,"lazy");else{if(u.createEventObject&&c.doScroll){try{a=!o.frameElement}catch(e){}a&&function t(){try{c.doScroll("left")}catch(e){return void o.setTimeout(t,50)}n("poll")}()}u[l](i+"DOMContentLoaded",n,!1),u[l](i+"readystatechange",n,!1),o[l](i+"load",n,!1)}}(function(){var t=h.length;v(t?function(){for(var e=0;e<t;++e)!function(e){o.setTimeout(function(){o.exports[h[e]].apply(o,arguments)},0)}(e)}:void 0)})}for(var o=window,u=document,c=u.documentElement,r=u.head||u.getElementsByTagName("head")[0]||c,e="",n=(m=u.getElementsByTagName("script")).length;0<=--n;){var a=m[n],l=a.src.match(/^[^?#]*\/run_prettify\.js(\?[^#]*)?(?:#.*)?$/);if(l){e=l[1]||"",a.parentNode.removeChild(a);break}}var s,i,d=!0,p=[],f=[],h=[];for(e.replace(/[?&]([^&=]+)=([^&]+)/g,function(e,t,n){n=decodeURIComponent(n),"autorun"==(t=decodeURIComponent(t))?d=!/^[0fn]/i.test(n):"lang"==t?p.push(n):"skin"==t?f.push(n):"callback"==t&&h.push(n)}),n=0,e=p.length;n<e;++n)!function(){var e=u.createElement("script");e.onload=e.onerror=e.onreadystatechange=function(){!e||e.readyState&&!/loaded|complete/.test(e.readyState)||(e.onerror=e.onload=e.onreadystatechange=null,--g||o.setTimeout(t,0),e.parentNode&&e.parentNode.removeChild(e),e=null)},e.type="text/javascript",e.src="https://cdn.rawgit.com/google/code-prettify/master/loader/lang-"+encodeURIComponent(p[n])+".js",r.insertBefore(e,r.firstChild)}(p[n]);var g=p.length,m=[];for(n=0,e=f.length;n<e;++n);i=(s=m).length,function e(t){if(t!==i){var n=u.createElement("link");n.rel="stylesheet",n.type="text/css",t+1<i&&(n.error=n.onerror=function(){e(t+1)}),n.href=s[t],r.appendChild(n)}}(0);var y,v=(window.PR_SHOULD_USE_CONTINUATION=!0,function(){function E(e,r){var a=/(?:^|\s)nocode(?:\s|$)/,l=[],s=0,i=[],o=0;return function e(t){var n=t.nodeType;if(1==n){if(!a.test(t.className)){for(n=t.firstChild;n;n=n.nextSibling)e(n);"br"!==(n=t.nodeName.toLowerCase())&&"li"!==n||(l[o]="\n",i[o<<1]=s++,i[o++<<1|1]=t)}}else 3!=n&&4!=n||(n=t.nodeValue).length&&(n=r?n.replace(/\r\n?/g,"\n"):n.replace(/[ \t\r\n]+/g," "),l[o]=n,i[o<<1]=s,s+=n.length,i[o++<<1|1]=t)}(e),{a:l.join("").replace(/\n$/,""),c:i}}function w(e,t,n,r,a){n&&(r(e={h:e,l:1,j:null,m:null,a:n,c:null,i:t,g:null}),a.push.apply(a,e.g))}function S(e){for(var t=void 0,n=e.firstChild;n;n=n.nextSibling){var r=n.nodeType;t=1===r?t?e:n:3===r&&c.test(n.nodeValue)?e:t}return t===e?void 0:t}function l(o,y){var v,b={};!function(){for(var e=o.concat(y),t=[],n={},r=0,a=e.length;r<a;++r){var l=e[r],s=l[3];if(s)for(var i=s.length;0<=--i;)b[s.charAt(i)]=l;s=""+(l=l[1]),n.hasOwnProperty(s)||(t.push(l),n[s]=null)}t.push(/[\0-\uffff]/),v=function(e){function i(e){var t=e.charCodeAt(0);if(92!==t)return t;var n=e.charAt(1);return(t=s[n])?t:"0"<=n&&n<="7"?parseInt(e.substring(1),8):"u"===n||"x"===n?parseInt(e.substring(2),16):e.charCodeAt(1)}function o(e){return e<32?(e<16?"\\x0":"\\x")+e.toString(16):"\\"===(e=String.fromCharCode(e))||"-"===e||"]"===e||"^"===e?"\\"+e:e}function u(e){var t=e.substring(1,e.length-1).match(/\\u[0-9A-Fa-f]{4}|\\x[0-9A-Fa-f]{2}|\\[0-3][0-7]{0,2}|\\[0-7]{1,2}|\\[\s\S]|-|[^-\\]/g);e=[];var n=["["];(r="^"===t[0])&&n.push("^");for(var r=r?1:0,a=t.length;r<a;++r){var l,s=t[r];if(/\\[bdsw]/i.test(s))n.push(s);else s=i(s),r+2<a&&"-"===t[r+1]?(l=i(t[r+2]),r+=2):l=s,e.push([s,l]),l<65||122<s||(l<65||90<s||e.push([32|Math.max(65,s),32|Math.min(l,90)]),l<97||122<s||e.push([-33&Math.max(97,s),-33&Math.min(l,122)]))}for(e.sort(function(e,t){return e[0]-t[0]||t[1]-e[1]}),t=[],a=[],r=0;r<e.length;++r)(s=e[r])[0]<=a[1]+1?a[1]=Math.max(a[1],s[1]):t.push(a=s);for(r=0;r<t.length;++r)s=t[r],n.push(o(s[0])),s[1]>s[0]&&(s[1]+1>s[0]&&n.push("-"),n.push(o(s[1])));return n.push("]"),n.join("")}function t(e){for(var t=e.source.match(/(?:\[(?:[^\x5C\x5D]|\\[\s\S])*\]|\\u[A-Fa-f0-9]{4}|\\x[A-Fa-f0-9]{2}|\\[0-9]+|\\[^ux0-9]|\(\?[:!=]|[\(\)\^]|[^\x5B\x5C\(\)\^]+)/g),n=t.length,r=[],a=0,l=0;a<n;++a){var s=t[a];"("===s?++l:"\\"===s.charAt(0)&&(s=+s.substring(1))&&(s<=l?r[s]=-1:t[a]=o(s))}for(a=1;a<r.length;++a)-1===r[a]&&(r[a]=++c);for(l=a=0;a<n;++a)"("===(s=t[a])?r[++l]||(t[a]="(?:"):"\\"===s.charAt(0)&&(s=+s.substring(1))&&s<=l&&(t[a]="\\"+r[s]);for(a=0;a<n;++a)"^"===t[a]&&"^"!==t[a+1]&&(t[a]="");if(e.ignoreCase&&d)for(a=0;a<n;++a)e=(s=t[a]).charAt(0),2<=s.length&&"["===e?t[a]=u(s):"\\"!==e&&(t[a]=s.replace(/[a-zA-Z]/g,function(e){return e=e.charCodeAt(0),"["+String.fromCharCode(-33&e,32|e)+"]"}));return t.join("")}for(var c=0,d=!1,n=!1,r=0,a=e.length;r<a;++r){var l=e[r];if(l.ignoreCase)n=!0;else if(/[a-z]/i.test(l.source.replace(/\\u[0-9a-f]{4}|\\x[0-9a-f]{2}|\\[^ux]/gi,""))){n=!(d=!0);break}}var s={b:8,t:9,n:10,v:11,f:12,r:13},p=[];for(r=0,a=e.length;r<a;++r){if((l=e[r]).global||l.multiline)throw Error(""+l);p.push("(?:"+t(l)+")")}return new RegExp(p.join("|"),n?"gi":"g")}(t)}();var x=y.length;return function e(t){for(var n=t.i,r=t.h,a=[n,"pln"],l=0,s=t.a.match(v)||[],i={},o=0,u=s.length;o<u;++o){var c,d=s[o],p=i[d],f=void 0;if("string"==typeof p)c=!1;else{var h=b[d.charAt(0)];if(h)f=d.match(h[1]),p=h[0];else{for(c=0;c<x;++c)if(h=y[c],f=d.match(h[1])){p=h[0];break}f||(p="pln")}!(c=5<=p.length&&"lang-"===p.substring(0,5))||f&&"string"==typeof f[1]||(c=!1,p="src"),c||(i[d]=p)}if(h=l,l+=d.length,c){c=f[1];var g=d.indexOf(c),m=g+c.length;f[2]&&(g=(m=d.length-f[2].length)-c.length),p=p.substring(5),w(r,n+h,d.substring(0,g),e,a),w(r,n+h+g,c,_(p,c),a),w(r,n+h+m,d.substring(m),e,a)}else a.push(n+h,p)}t.g=a}}function e(e){var t=[],n=[];e.tripleQuotedStrings?t.push(["str",/^(?:\'\'\'(?:[^\'\\]|\\[\s\S]|\'{1,2}(?=[^\']))*(?:\'\'\'|$)|\"\"\"(?:[^\"\\]|\\[\s\S]|\"{1,2}(?=[^\"]))*(?:\"\"\"|$)|\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$))/,null,"'\""]):e.multiLineStrings?t.push(["str",/^(?:\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$)|\`(?:[^\\\`]|\\[\s\S])*(?:\`|$))/,null,"'\"`"]):t.push(["str",/^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,null,"\"'"]),e.verbatimStrings&&n.push(["str",/^@\"(?:[^\"]|\"\")*(?:\"|$)/,null]);var r=e.hashComments;if(r&&(e.cStyleComments?(1<r?t.push(["com",/^#(?:##(?:[^#]|#(?!##))*(?:###|$)|.*)/,null,"#"]):t.push(["com",/^#(?:(?:define|e(?:l|nd)if|else|error|ifn?def|include|line|pragma|undef|warning)\b|[^\r\n]*)/,null,"#"]),n.push(["str",/^<(?:(?:(?:\.\.\/)*|\/?)(?:[\w-]+(?:\/[\w-]+)+)?[\w-]+\.h(?:h|pp|\+\+)?|[a-z]\w*)>/,null])):t.push(["com",/^#[^\r\n]*/,null,"#"])),e.cStyleComments&&(n.push(["com",/^\/\/[^\r\n]*/,null]),n.push(["com",/^\/\*[\s\S]*?(?:\*\/|$)/,null])),r=e.regexLiterals){var a=(r=1<r?"":"\n\r")?".":"[\\S\\s]";n.push(["lang-regex",RegExp("^(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[+\\-]=|->|\\/=?|::?|<<?=?|>>?>?=?|,|;|\\?|@|\\[|~|{|\\^\\^?=?|\\|\\|?=?|break|case|continue|delete|do|else|finally|instanceof|return|throw|try|typeof)\\s*(/(?=[^/*"+r+"])(?:[^/\\x5B\\x5C"+r+"]|\\x5C"+a+"|\\x5B(?:[^\\x5C\\x5D"+r+"]|\\x5C"+a+")*(?:\\x5D|$))+/)")])}return(r=e.types)&&n.push(["typ",r]),(r=(""+e.keywords).replace(/^ | $/g,"")).length&&n.push(["kwd",new RegExp("^(?:"+r.replace(/[\s,]+/g,"|")+")\\b"),null]),t.push(["pln",/^\s+/,null," \r\n\t "]),r="^.[^\\s\\w.$@'\"`/\\\\]*",e.regexLiterals&&(r+="(?!s*/)"),n.push(["lit",/^@[a-z_$][a-z_$@0-9]*/i,null],["typ",/^(?:[@_]?[A-Z]+[a-z][A-Za-z_$@0-9]*|\w+_t\b)/,null],["pln",/^[a-z_$][a-z_$@0-9]*/i,null],["lit",/^(?:0x[a-f0-9]+|(?:\d(?:_\d+)*\d*(?:\.\d*)?|\.\d\+)(?:e[+\-]?\d+)?)[a-z]*/i,null,"0123456789"],["pln",/^\\[\s\S]?/,null],["pun",new RegExp(r),null]),l(t,n)}function C(e,t,a){function l(e){var t=e.nodeType;if(1!=t||i.test(e.className)){if((3==t||4==t)&&a){var n=e.nodeValue,r=n.match(o);r&&(t=n.substring(0,r.index),e.nodeValue=t,(n=n.substring(r.index+r[0].length))&&e.parentNode.insertBefore(u.createTextNode(n),e.nextSibling),s(e),t||e.parentNode.removeChild(e))}}else if("br"===e.nodeName)s(e),e.parentNode&&e.parentNode.removeChild(e);else for(e=e.firstChild;e;e=e.nextSibling)l(e)}function s(e){for(;!e.nextSibling;)if(!(e=e.parentNode))return;e=function e(t,n){var r=n?t.cloneNode(!1):t;if(a=t.parentNode){var a=e(a,1),l=t.nextSibling;a.appendChild(r);for(var s=l;s;s=l)l=s.nextSibling,a.appendChild(s)}return r}(e.nextSibling,0);for(var t;(t=e.parentNode)&&1===t.nodeType;)e=t;r.push(e)}for(var i=/(?:^|\s)nocode(?:\s|$)/,o=/\r\n?|\n/,u=e.ownerDocument,n=u.createElement("li");e.firstChild;)n.appendChild(e.firstChild);for(var r=[n],c=0;c<r.length;++c)l(r[c]);t===(0|t)&&r[0].setAttribute("value",t);var d=u.createElement("ol");d.className="linenums",t=Math.max(0,t-1|0)||0,c=0;for(var p=r.length;c<p;++c)(n=r[c]).className="L"+(c+t)%10,n.firstChild||n.appendChild(u.createTextNode(" ")),d.appendChild(n);e.appendChild(d)}function t(e,t){for(var n=t.length;0<=--n;){var r=t[n];p.hasOwnProperty(r)?T.console&&console.warn("cannot override language handler %s",r):p[r]=e}}function _(e,t){return e&&p.hasOwnProperty(e)||(e=/^\s*</.test(t)?"default-markup":"default-code"),p[e]}function N(e){var t=e.j;try{var n=(o=E(e.h,e.l)).a;e.a=n,e.c=o.c,e.i=0,_(t,n)(e);var r,a,l=(l=/\bMSIE\s(\d+)/.exec(navigator.userAgent))&&+l[1]<=8,s=(t=/\n/g,e.a),i=s.length,o=0,u=e.c,c=u.length,d=(n=0,e.g),p=d.length,f=0;for(d[p]=i,a=r=0;a<p;)d[a]!==d[a+2]?(d[r++]=d[a++],d[r++]=d[a++]):a+=2;for(p=r,a=r=0;a<p;){for(var h=d[a],g=d[a+1],m=a+2;m+2<=p&&d[m+1]===g;)m+=2;d[r++]=h,d[r++]=g,a=m}d.length=r;var y=e.h;e="",y&&(e=y.style.display,y.style.display="none");try{for(;n<c;){var v,b=u[n+2]||i,x=d[f+2]||i,w=(m=Math.min(b,x),u[n+1]);if(1!==w.nodeType&&(v=s.substring(o,m))){l&&(v=v.replace(t,"\r")),w.nodeValue=v;var S=w.ownerDocument,C=S.createElement("span");C.className=d[f+1];var N=w.parentNode;N.replaceChild(C,w),C.appendChild(w),o<b&&(u[n+1]=w=S.createTextNode(s.substring(m,b)),N.insertBefore(w,C.nextSibling))}b<=(o=m)&&(n+=2),x<=o&&(f+=2)}}finally{y&&(y.style.display=e)}}catch(e){T.console&&console.log(e&&e.stack||e)}}var n,r,T=window,a=[n=[[r=["break,continue,do,else,for,if,return,while"],"auto,case,char,const,default,double,enum,extern,float,goto,inline,int,long,register,short,signed,sizeof,static,struct,switch,typedef,union,unsigned,void,volatile"],"catch,class,delete,false,import,new,operator,private,protected,public,this,throw,true,try,typeof"],"abstract,assert,boolean,byte,extends,finally,final,implements,import,instanceof,interface,null,native,package,strictfp,super,synchronized,throws,transient"],s=[n,"abstract,as,base,bool,by,byte,checked,decimal,delegate,descending,dynamic,event,finally,fixed,foreach,from,group,implicit,in,interface,internal,into,is,let,lock,null,object,out,override,orderby,params,partial,readonly,ref,sbyte,sealed,stackalloc,string,select,uint,ulong,unchecked,unsafe,ushort,var,virtual,where"],i=[r,"and,as,assert,class,def,del,elif,except,exec,finally,from,global,import,in,is,lambda,nonlocal,not,or,pass,print,raise,try,with,yield,False,True,None"],o=[r,"alias,and,begin,case,class,def,defined,elsif,end,ensure,false,in,module,next,nil,not,or,redo,rescue,retry,self,super,then,true,undef,unless,until,when,yield,BEGIN,END"],u=/^(DIR|FILE|vector|(de|priority_)?queue|list|stack|(const_)?iterator|(multi)?(set|map)|bitset|u?(int|float)\d*)\b/,c=/\S/,d=e({keywords:[f=[n,"alignof,align_union,asm,axiom,bool,concept,concept_map,const_cast,constexpr,decltype,delegate,dynamic_cast,explicit,export,friend,generic,late_check,mutable,namespace,nullptr,property,reinterpret_cast,static_assert,static_cast,template,typeid,typename,using,virtual,where"],s,a,n=[n,"debugger,eval,export,function,get,instanceof,null,set,undefined,var,with,Infinity,NaN"],"caller,delete,die,do,dump,elsif,eval,exit,foreach,for,goto,if,import,last,local,my,next,no,our,print,package,redo,require,sub,undef,unless,until,use,wantarray,while,BEGIN,END",i,o,r=[r,"case,done,elif,esac,eval,fi,function,in,local,set,then,until"]],hashComments:!0,cStyleComments:!0,multiLineStrings:!0,regexLiterals:!0}),p={};t(d,["default-code"]),t(l([],[["pln",/^[^<?]+/],["dec",/^<!\w[^>]*(?:>|$)/],["com",/^<\!--[\s\S]*?(?:-\->|$)/],["lang-",/^<\?([\s\S]+?)(?:\?>|$)/],["lang-",/^<%([\s\S]+?)(?:%>|$)/],["pun",/^(?:<[%?]|[%?]>)/],["lang-",/^<xmp\b[^>]*>([\s\S]+?)<\/xmp\b[^>]*>/i],["lang-js",/^<script\b[^>]*>([\s\S]*?)(<\/script\b[^>]*>)/i],["lang-css",/^<style\b[^>]*>([\s\S]*?)(<\/style\b[^>]*>)/i],["lang-in.tag",/^(<\/?[a-z][^<>]*>)/i]]),"default-markup htm html mxml xhtml xml xsl".split(" ")),t(l([["pln",/^[\s]+/,null," \t\r\n"],["atv",/^(?:\"[^\"]*\"?|\'[^\']*\'?)/,null,"\"'"]],[["tag",/^^<\/?[a-z](?:[\w.:-]*\w)?|\/?>$/i],["atn",/^(?!style[\s=]|on)[a-z](?:[\w:-]*\w)?/i],["lang-uq.val",/^=\s*([^>\'\"\s]*(?:[^>\'\"\s\/]|\/(?=\s)))/],["pun",/^[=<>\/]+/],["lang-js",/^on\w+\s*=\s*\"([^\"]+)\"/i],["lang-js",/^on\w+\s*=\s*\'([^\']+)\'/i],["lang-js",/^on\w+\s*=\s*([^\"\'>\s]+)/i],["lang-css",/^style\s*=\s*\"([^\"]+)\"/i],["lang-css",/^style\s*=\s*\'([^\']+)\'/i],["lang-css",/^style\s*=\s*([^\"\'>\s]+)/i]]),["in.tag"]),t(l([],[["atv",/^[\s\S]+/]]),["uq.val"]),t(e({keywords:f,hashComments:!0,cStyleComments:!0,types:u}),"c cc cpp cxx cyc m".split(" ")),t(e({keywords:"null,true,false"}),["json"]),t(e({keywords:s,hashComments:!0,cStyleComments:!0,verbatimStrings:!0,types:u}),["cs"]),t(e({keywords:a,cStyleComments:!0}),["java"]),t(e({keywords:r,hashComments:!0,multiLineStrings:!0}),["bash","bsh","csh","sh"]),t(e({keywords:i,hashComments:!0,multiLineStrings:!0,tripleQuotedStrings:!0}),["cv","py","python"]),t(e({keywords:"caller,delete,die,do,dump,elsif,eval,exit,foreach,for,goto,if,import,last,local,my,next,no,our,print,package,redo,require,sub,undef,unless,until,use,wantarray,while,BEGIN,END",hashComments:!0,multiLineStrings:!0,regexLiterals:2}),["perl","pl","pm"]),t(e({keywords:o,hashComments:!0,multiLineStrings:!0,regexLiterals:!0}),["rb","ruby"]),t(e({keywords:n,cStyleComments:!0,regexLiterals:!0}),["javascript","js"]),t(e({keywords:"all,and,by,catch,class,else,extends,false,finally,for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then,throw,true,try,unless,until,when,while,yes",hashComments:3,cStyleComments:!0,multilineStrings:!0,tripleQuotedStrings:!0,regexLiterals:!0}),["coffee"]),t(l([],[["str",/^[\s\S]+/]]),["regex"]);var f,h=T.PR={createSimpleLexer:l,registerLangHandler:t,sourceDecorator:e,PR_ATTRIB_NAME:"atn",PR_ATTRIB_VALUE:"atv",PR_COMMENT:"com",PR_DECLARATION:"dec",PR_KEYWORD:"kwd",PR_LITERAL:"lit",PR_NOCODE:"nocode",PR_PLAIN:"pln",PR_PUNCTUATION:"pun",PR_SOURCE:"src",PR_STRING:"str",PR_TAG:"tag",PR_TYPE:"typ",prettyPrintOne:function(e,t,n){n=n||!1,t=t||null;var r=document.createElement("div");return r.innerHTML="<pre>"+e+"</pre>",r=r.firstChild,n&&C(r,n,!0),N({j:t,m:n,h:r,l:1,a:null,i:null,c:null,g:null}),r.innerHTML},prettyPrint:y=function(u,e){for(var c=(t=e||document.body).ownerDocument||document,t=[t.getElementsByTagName("pre"),t.getElementsByTagName("code"),t.getElementsByTagName("xmp")],d=[],n=0;n<t.length;++n)for(var r=0,a=t[n].length;r<a;++r)d.push(t[n][r]);t=null;var p=Date;p.now||(p={now:function(){return+new Date}});var f=0,h=/\blang(?:uage)?-([\w.]+)(?!\S)/,g=/\bprettyprint\b/,m=/\bprettyprinted\b/,y=/pre|xmusers/i,v=/^code$/i,b=/^(?:pre|code|xmp)$/i,x={};!function e(){for(var t=T.PR_SHOULD_USE_CONTINUATION?p.now()+250:1/0;f<d.length&&p.now()<t;f++){for(var n=d[f],r=x,a=n;(a=a.previousSibling)&&((i=(7===(l=a.nodeType)||8===l)&&a.nodeValue)?/^\??prettify\b/.test(i):3===l&&!/\S/.test(a.nodeValue));)if(i){r={},i.replace(/\b(\w+)=([\w:.%+-]+)/g,function(e,t,n){r[t]=n});break}if(a=n.className,(r!==x||g.test(a))&&!m.test(a)){for(l=!1,i=n.parentNode;i;i=i.parentNode)if(b.test(i.tagName)&&i.className&&g.test(i.className)){l=!0;break}if(!l){var l,s;if(n.className+=" prettyprinted",(l=r.lang)||(!(l=a.match(h))&&(s=S(n))&&v.test(s.tagName)&&(l=s.className.match(h)),l=l&&l[1]),y.test(n.tagName))i=1;else{var i=n.currentStyle,o=c.defaultView;i=(i=i?i.whiteSpace:o&&o.getComputedStyle?o.getComputedStyle(n,null).getPropertyValue("white-space"):0)&&"pre"===i.substring(0,3)}(o="true"===(o=r.linenums)||+o)||(o=!!(o=a.match(/\blinenums\b(?::(\d+))?/))&&(!o[1]||!o[1].length||+o[1])),o&&C(n,o,i),N({j:l,h:n,m:o,l:i,a:null,i:null,c:null,g:null})}}}f<d.length?T.setTimeout(e,250):"function"==typeof u&&u()}()}};"function"==typeof(f=T.define)&&f.amd&&f("google-code-prettify",[],function(){return h})}(),y);g||o.setTimeout(t,0)}();
+    </script>
+<script>
+    !function($){$.fn.markItUp=function(settings,extraSettings){var method,params,options,ctrlKey,shiftKey,altKey;ctrlKey=shiftKey=altKey=!1,"string"==typeof settings&&(method=settings,params=extraSettings),options={id:"",nameSpace:"",root:"",previewHandler:!0,previewInWindow:"",previewInElement:"#presed",previewAutoRefresh:!0,previewPosition:"after",previewTemplatePath:"",previewParser:!1,previewParserPath:"",previewParserVar:"data",previewParserAjaxType:"POST",resizeHandle:!0,beforeInsert:"",afterInsert:"",onEnter:{},onShiftEnter:{},onCtrlEnter:{},onTab:{},markupSet:[{}]},$.extend(options,settings,extraSettings),options.root||$("script").each(function(e,t){var r=$(t).get(0).src.match(/(.*)jquery\.markitup(\.pack)?\.js$/);null!==r&&(options.root=r[1])});var uaMatch=function(e){e=e.toLowerCase();var t=/(chrome)[ \/]([\w.]+)/.exec(e)||/(webkit)[ \/]([\w.]+)/.exec(e)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(e)||/(msie) ([\w.]+)/.exec(e)||e.indexOf("compatible")<0&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(e)||[];return{browser:t[1]||"",version:t[2]||"0"}},matched=uaMatch(navigator.userAgent),browser={};return matched.browser&&(browser[matched.browser]=!0,browser.version=matched.version),browser.chrome?browser.webkit=!0:browser.webkit&&(browser.safari=!0),this.each(function(){var $$,textarea,levels,scrollPosition,caretPosition,caretOffset,clicked,hash,header,footer,previewWindow,template,iFrame,abort;if($$=$(this),textarea=this,levels=[],abort=!1,scrollPosition=caretPosition=0,caretOffset=-1,options.previewParserPath=localize(options.previewParserPath),options.previewTemplatePath=localize(options.previewTemplatePath),method)switch(method){case"remove":remove();break;case"insert":markup(params);break;default:$.error("Method "+method+" does not exist on jQuery.markItUp")}else init();function localize(e,t){return t?e.replace(/("|')~\//g,"$1"+options.root):e.replace(/^~\//,options.root)}function init(){id="",nameSpace="",options.id?id='id="'+options.id+'"':$$.attr("id")&&(id='id="markItUp'+$$.attr("id").substr(0,1).toUpperCase()+$$.attr("id").substr(1)+'"'),options.nameSpace&&(nameSpace='class="'+options.nameSpace+'"'),$$.wrap("<div "+nameSpace+"></div>"),$$.wrap("<div "+id+' class="markItUp"></div>'),$$.wrap('<div class="markItUpContainer"></div>'),$$.addClass("markItUpEditor"),header=$('<div class="markItUpHeader"></div>').insertBefore($$),$(dropMenus(options.markupSet)).appendTo(header),footer=$('<div class="markItUpFooter"></div>').insertAfter($$),!0===options.resizeHandle&&!0!==browser.safari&&(resizeHandle=$('<div class="markItUpResizeHandle"></div>').insertAfter($$).bind("mousedown.markItUp",function(e){var t,r,i=$$.height(),n=e.clientY;t=function(e){return $$.css("height",Math.max(20,e.clientY+i-n)+"px"),!1},r=function(e){return $("html").unbind("mousemove.markItUp",t).unbind("mouseup.markItUp",r),!1},$("html").bind("mousemove.markItUp",t).bind("mouseup.markItUp",r)}),footer.append(resizeHandle)),$$.bind("keydown.markItUp",keyPressed).bind("keyup",keyPressed),$$.bind("insertion.markItUp",function(e,t){!1!==t.target&&get(),textarea===$.markItUp.focused&&markup(t)}),$$.bind("focus.markItUp",function(){$.markItUp.focused=this}),options.previewInElement&&refreshPreview()}function dropMenus(markupSet){var ul=$("<ul></ul>"),i=0;return $("li:hover > ul",ul).css("display","block"),$.each(markupSet,function(){var button=this,t="",title,li,j;if(title=button.title?button.key?(button.title||"")+" [Ctrl+"+button.key+"]":button.title||"":button.key?(button.name||"")+" [Ctrl+"+button.key+"]":button.name||"",key=button.key?'accesskey="'+button.key+'"':"",button.separator)li=$('<li class="markItUpSeparator">'+(button.separator||"")+"</li>").appendTo(ul);else{for(i++,j=levels.length-1;0<=j;j--)t+=levels[j]+"-";li=$('<li class="markItUpButton markItUpButton'+t+i+" "+(button.className||"")+'"><a href="#" '+key+' title="'+title+'">'+(button.name||"")+"</a></li>").bind("contextmenu.markItUp",function(){return!1}).bind("click.markItUp",function(e){e.preventDefault()}).bind("focusin.markItUp",function(){$$.focus()}).bind("mouseup",function(e){return button.call&&eval(button.call)(e),setTimeout(function(){markup(button)},1),!1}).bind("mouseenter.markItUp",function(){$("> ul",this).show(),$(document).one("click",function(){$("ul ul",header).hide()})}).bind("mouseleave.markItUp",function(){$("> ul",this).hide()}).appendTo(ul),button.dropMenu&&(levels.push(i),$(li).addClass("markItUpDropMenu").append(dropMenus(button.dropMenu)))}}),levels.pop(),ul}function magicMarkups(e){return e?e=(e=(e=e.toString()).replace(/\(\!\(([\s\S]*?)\)\!\)/g,function(e,t){var r=t.split("|!|");return!0===altKey?void 0!==r[1]?r[1]:r[0]:void 0===r[1]?"":r[0]})).replace(/\[\!\[([\s\S]*?)\]\!\]/g,function(e,t){var r=t.split(":!:");return!0!==abort&&(value=prompt(r[0],r[1]?r[1]:""),null===value&&(abort=!0),value)}):""}function prepare(e){return $.isFunction(e)&&(e=e(hash)),magicMarkups(e)}function build(e){var t=prepare(clicked.openWith),r=prepare(clicked.placeHolder),i=prepare(clicked.replaceWith),n=prepare(clicked.closeWith),o=prepare(clicked.openBlockWith),a=prepare(clicked.closeBlockWith),s=clicked.multiline;if(""!==i)block=t+i+n;else if(""===selection&&""!==r)block=t+r+n;else{var l=[e=e||selection],c=[];!0===s&&(l=e.split(/\r?\n/));for(var p=0;p<l.length;p++){var u;line=l[p],(u=line.match(/ *$/))?c.push(t+line.replace(/ *$/g,"")+n+u):c.push(t+line+n)}block=c.join("\n")}return block=o+block+a,{block:block,openBlockWith:o,openWith:t,replaceWith:i,placeHolder:r,closeWith:n,closeBlockWith:a}}function markup(e){var t,r,i,n;if(hash=clicked=e,get(),$.extend(hash,{line:"",root:options.root,textarea:textarea,selection:selection||"",caretPosition:caretPosition,ctrlKey:ctrlKey,shiftKey:shiftKey,altKey:altKey}),prepare(options.beforeInsert),prepare(clicked.beforeInsert),(!0===ctrlKey&&!0===shiftKey||!0===e.multiline)&&prepare(clicked.beforeMultiInsert),$.extend(hash,{line:1}),!0===ctrlKey&&!0===shiftKey){for(lines=selection.split(/\r?\n/),r=0,i=lines.length,n=0;n<i;n++)""!==$.trim(lines[n])?($.extend(hash,{line:++r,selection:lines[n]}),lines[n]=build(lines[n]).block):lines[n]="";string={block:lines.join("\n")},start=caretPosition,t=string.block.length+(browser.opera?i-1:0)}else!0===ctrlKey?(string=build(selection),start=caretPosition+string.openWith.length,t=string.block.length-string.openWith.length-string.closeWith.length,t-=string.block.match(/ $/)?1:0,t-=fixIeBug(string.block)):!0===shiftKey?(string=build(selection),start=caretPosition,t=string.block.length,t-=fixIeBug(string.block)):(string=build(selection),start=caretPosition+string.block.length,t=0,start-=fixIeBug(string.block));""===selection&&""===string.replaceWith&&(caretOffset+=fixOperaBug(string.block),start=caretPosition+string.openBlockWith.length+string.openWith.length,t=string.block.length-string.openBlockWith.length-string.openWith.length-string.closeWith.length-string.closeBlockWith.length,caretOffset=$$.val().substring(caretPosition,$$.val().length).length,caretOffset-=fixOperaBug($$.val().substring(0,caretPosition))),$.extend(hash,{caretPosition:caretPosition,scrollPosition:scrollPosition}),string.block!==selection&&!1===abort?(insert(string.block),set(start,t)):caretOffset=-1,get(),$.extend(hash,{line:"",selection:selection}),(!0===ctrlKey&&!0===shiftKey||!0===e.multiline)&&prepare(clicked.afterMultiInsert),prepare(clicked.afterInsert),prepare(options.afterInsert),previewWindow&&options.previewAutoRefresh&&refreshPreview(),shiftKey=altKey=ctrlKey=abort=!1}function fixOperaBug(e){return browser.opera?e.length-e.replace(/\n*/g,"").length:0}function fixIeBug(e){return browser.msie?e.length-e.replace(/\r*/g,"").length:0}function insert(e){document.selection?document.selection.createRange().text=e:textarea.value=textarea.value.substring(0,caretPosition)+e+textarea.value.substring(caretPosition+selection.length,textarea.value.length)}function set(e,t){if(textarea.createTextRange){if(browser.opera&&9.5<=browser.version&&0==t)return!1;range=textarea.createTextRange(),range.collapse(!0),range.moveStart("character",e),range.moveEnd("character",t),range.select()}else textarea.setSelectionRange&&textarea.setSelectionRange(e,e+t);textarea.scrollTop=scrollPosition,textarea.focus()}function get(){if(textarea.focus(),scrollPosition=textarea.scrollTop,document.selection)if(selection=document.selection.createRange().text,browser.msie){var e=document.selection.createRange(),t=e.duplicate();for(t.moveToElementText(textarea),caretPosition=-1;t.inRange(e);)t.moveStart("character"),caretPosition++}else caretPosition=textarea.selectionStart;else caretPosition=textarea.selectionStart,selection=textarea.value.substring(caretPosition,textarea.selectionEnd);return selection}function preview(){"function"==typeof options.previewHandler?previewWindow=!0:options.previewInElement?previewWindow=$(options.previewInElement):!previewWindow||previewWindow.closed?options.previewInWindow?(previewWindow=window.open("","preview",options.previewInWindow),$(window).unload(function(){previewWindow.close()})):(iFrame=$('<iframe class="markItUpPreviewFrame"></iframe>'),"after"==options.previewPosition?iFrame.insertAfter(footer):iFrame.insertBefore(header),previewWindow=iFrame[iFrame.length-1].contentWindow||frame[iFrame.length-1]):!0===altKey&&(iFrame?iFrame.remove():previewWindow.close(),previewWindow=iFrame=!1),options.previewAutoRefresh||refreshPreview(),options.previewInWindow&&previewWindow.focus()}function refreshPreview(){renderPreview()}function renderPreview(){var t=$$.val();return options.previewParser&&"function"==typeof options.previewParser&&(t=options.previewParser(t)),options.previewHandler&&"function"==typeof options.previewHandler?options.previewHandler(t):""!==options.previewParserPath?$.ajax({type:options.previewParserAjaxType,dataType:"text",global:!1,url:options.previewParserPath,data:options.previewParserVar+"="+encodeURIComponent(t),success:function(e){writeInPreview(localize(e,1))}}):template||$.ajax({url:options.previewTemplatePath,dataType:"text",global:!1,success:function(e){writeInPreview(localize(e,1).replace(/<!-- content -->/g,t))}}),!1}function writeInPreview(e){if(options.previewInElement)$(options.previewInElement).html(e);else if(previewWindow&&previewWindow.document){try{sp=previewWindow.document.documentElement.scrollTop}catch(e){sp=0}previewWindow.document.open(),previewWindow.document.write(e),previewWindow.document.close(),previewWindow.document.documentElement.scrollTop=sp}}function keyPressed(e){if(shiftKey=e.shiftKey,altKey=e.altKey,ctrlKey=(!e.altKey||!e.ctrlKey)&&(e.ctrlKey||e.metaKey),"keydown"===e.type){if(!0===ctrlKey&&(li=$('a[accesskey="'+(13==e.keyCode?"\\n":String.fromCharCode(e.keyCode))+'"]',header).parent("li"),0!==li.length))return ctrlKey=!1,setTimeout(function(){li.triggerHandler("mouseup")},1),!1;if(13===e.keyCode||10===e.keyCode)return!0===ctrlKey?(ctrlKey=!1,markup(options.onCtrlEnter),options.onCtrlEnter.keepDefault):!0===shiftKey?(shiftKey=!1,markup(options.onShiftEnter),options.onShiftEnter.keepDefault):(markup(options.onEnter),options.onEnter.keepDefault);if(9===e.keyCode)return 1!=shiftKey&&1!=ctrlKey&&1!=altKey&&(-1!==caretOffset?(get(),set(caretOffset=$$.val().length-caretOffset,0),!(caretOffset=-1)):(markup(options.onTab),options.onTab.keepDefault))}}function remove(){$$.unbind(".markItUp").removeClass("markItUpEditor"),$$.parent("div").parent("div.markItUp").parent("div").replaceWith($$);var e=$$.parent("div").parent("div.markItUp").parent("div");e.length&&e.replaceWith($$),$$.data("markItUp",null)}})},$.fn.markItUpRemove=function(){return this.each(function(){$(this).markItUp("remove")})},$.markItUp=function(e){var t={target:!1};if($.extend(t,e),t.target)return $(t.target).each(function(){$(this).focus(),$(this).trigger("insertion",[t])});$("textarea").trigger("insertion",[t])}}(jQuery);
+    $(document).ready(function()	{
+        $('#bbcode').markItUp(
+            mySettings = {
+                nameSpace: "bbcode",
+                previewParserPath:  "https://coderedirect.com/markituusers/sets/bbcode/tpreview.php",
+                previewHandler:	true,
+                previewAutoRefresh:true,
+                previewPosition:'after',
+                markupSet: [
+                    {className: 'mybold', key:'B', openWith:'[b]', closeWith:'[/b]'},
+                    {className: 'myitalic', key:'I', openWith:'[i]', closeWith:'[/i]'},
+                    {className: 'myunderline', key:'U', openWith:'[u]', closeWith:'[/u]'},
+                    {className: 'mystrikethrough', key:'T', openWith:'[s]', closeWith:'[/s]'},
+                    {className: 'mylink', key:'L', openWith:'[url=[![Url]!]]', closeWith:'[/url]', placeHolder:'Your text to link here...'},
+                    {className: 'myimage', key:'P', replaceWith:'[img][![Url]!][/img]'},
+                    {className: 'mysize', key:'S', openWith:'[size=[![Text size]!]]', closeWith:'[/size]', dropMenu :[
+                        {name:'Big', openWith:'[size=160]', closeWith:'[/size]' },
+                        {name:'Normal', openWith:'[size=100]', closeWith:'[/size]' },
+                        {name:'Small', openWith:'[size=80]', closeWith:'[/size]' }
+                    ]},
+                    {className: 'mycolor', openWith:'[color=[![Color]!]]', closeWith:'[/color]', dropMenu: [
+                        {name:'Yellow', openWith:'[color=yellow]', closeWith:'[/color]', className:"col1-1" },
+                        {name:'Orange', openWith:'[color=orange]', closeWith:'[/color]', className:"col1-2" },
+                        {name:'Red', openWith:'[color=red]', closeWith:'[/color]', className:"col1-3" },
+                        {name:'Blue', openWith:'[color=blue]', closeWith:'[/color]', className:"col2-1" },
+                        {name:'Purple', openWith:'[color=purple]', closeWith:'[/color]', className:"col2-2" },
+                        {name:'Green', openWith:'[color=green]', closeWith:'[/color]', className:"col2-3" },
+                        {name:'White', openWith:'[color=white]', closeWith:'[/color]', className:"col3-1" },
+                        {name:'Gray', openWith:'[color=gray]', closeWith:'[/color]', className:"col3-2" },
+                        {name:'Black', openWith:'[color=black]', closeWith:'[/color]', className:"col3-3" }
+                    ]},
+                    {className: 'myquote', openWith:'[quote]', closeWith:'[/quote]'},
+                    {className: 'mycode', openWith:'[code]', closeWith:'[/code]'},
+                    {className: 'mysubscript', openWith:'[sub]', closeWith:'[/sub]'},
+                    {className: 'mysuperscript', openWith:'[sup]', closeWith:'[/sup]'},
+                    {className: 'mycenter', openWith:'[align=center]', closeWith:'[/align]'},
+                    {className: 'myleft', openWith:'[align=left]', closeWith:'[/align]'},
+                    {className: 'myright', openWith:'[align=right]', closeWith:'[/align]'},
+                    {className: 'clean', replaceWith:function(h) { return h.selection.replace(/\[(.*?)\]/g, "") } },
+                    {className: 'preview', call:'preview' }
+                ]
+            }
+        );
+    });
+    </script>
+<script>
+    $(function(){
+        $("a.vote_up").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=vote_up&curent=0&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=1",
+                success: function(msg)
+                {
+                    $("span#votes_count"+the_id).html(msg);
+                    $("span#votes_count"+the_id).fadeIn();
+                    $("#shareform"+the_id).show("fast");
+                    $("span#vote_buttons"+the_id).show();
+                    $(".mydiv"+the_id).css({ 'color': '#086ae8'});
+                    $(".mydiv"+the_id).load(location.href + " .mydiv"+the_id);
+                }
+            });
+        });
+        $("a.vote_down").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=vote_down&curent=0&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=1",
+                success: function(msg)
+                {
+                    $("span#votes_count"+the_id).html(msg);
+                    $("span#votes_count"+the_id).fadeIn();
+                    $("#shareform"+the_id).show("fast");
+                    $("span#vote_buttons"+the_id).show();
+                    $(".mydiv"+the_id).css({ 'color': '#086ae8'});
+                    $(".mydiv"+the_id).load(location.href + " .mydiv"+the_id);
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(function(){
+        $("a.voted_up").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=vote_up&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=2",
+                success: function(msg)
+                {
+                    $("span#votes_countd"+the_id).html(msg);
+                    $("span#votes_countd"+the_id).fadeIn();
+                    $("#shareforms"+the_id).show("fast");
+                    $("span#voted_buttons"+the_id).show();
+                }
+            });
+        });
+        $("a.voted_down").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=vote_down&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=2",
+                success: function(msg)
+                {
+                    $("span#votes_countd"+the_id).html(msg);
+                    $("span#votes_countd"+the_id).fadeIn();
+                    $("#shareforms"+the_id).show("fast");
+                    $("span#voted_buttons"+the_id).show();
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('a.replycontrol').click(function(){
+            var $this = $(this);
+            var divID = $this.attr("id").replace("replycontrol_", "replydisplay_");
+            var $div = $('#'+divID);
+            if ($div.is(':visible')) {
+                $div.slideUp('fast');
+            } else {
+                $div.slideDown('fast');
+            }
+            $('html, body').animate({scrollTop: $('#'+divID).offset().top - 100}, 200);
+            return false;
+        });
+    });
+</script>
+<script>
+    $(function(){
+        $("a.rate_up").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=rate_up&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=3",
+                success: function(msg)
+                {
+                    $(".mydivs"+the_id).fadeOut();
+                    $(".mydivs"+the_id).html(msg);
+                    $(".mydivs"+the_id).fadeIn();
+                }
+            });
+        });
+        $("a.rate_down").click(function(){
+            the_id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                data: "action=rate_down&id="+$(this).attr("id"),
+                url: "https://coderedirect.com/votes.php?pub=3",
+                success: function(msg)
+                {
+                    $(".mydivs2"+the_id).fadeOut();
+                    $(".mydivs2"+the_id).html(msg);
+                    $(".mydivs2"+the_id).fadeIn();
+                }
+            });
+        });
+    });
+</script>
+
+
+<div class="footer">
+<div class="ten">
+<div class="eight column">
+<a href="https://coderedirect.com/">Copyrights Code Redirect 2021</a> ·
+<a href="https://coderedirect.com/page.php?page=privacy">Privacy</a> ·
+<a href="https://coderedirect.com/page.php?page=about">About Us</a> ·
+<a href="https://coderedirect.com/page.php?page=terms">Terms of Use</a> ·
+<a href="https://coderedirect.com/feedback.php">Contact us</a> ·
+<!--<a href="https://rssatom.com/remote.php?remote=https://coderedirect.com/rss.php" target="_blank">RSS</a>-->
+</div>
+</div>
+</div>
+<a class="cd-top cd-is-visible"><i title="Top" class="mdi mdi-chevron-up"></i></a>
+
+<script>
+jQuery(document).ready(function(a){var e=a(".cd-top");a(window).scroll(function(){a(this).scrollTop()>300?e.addClass("cd-is-visible"):e.removeClass("cd-is-visible cd-fade-out"),a(this).scrollTop()>1200&&e.addClass("cd-fade-out")}),e.on("click",function(b){b.preventDefault(),a("body,html").animate({scrollTop:0},200)})});
+</script>
+
+<script>
+$(document).ready(function(){
+$(".menuMobile").hide();
+$(".topMenu").show();
+$('.topMenu').click(function(){
+$(".menuMobile").slideToggle(110);
+});
+});
+</script>
+<div class="eupopup eupopup-container eupopup-container-block eupopup-bottomright"></div>
+
+</body></html>

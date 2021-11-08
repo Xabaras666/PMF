@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/base.css">
+        <style>
+            p {
+                margin: 5px 0 10px 0;
+                font-weight: bold;
+                color: rgb(119, 72, 231);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            #page_title h1:hover {
+                color: red;
+            }
+
+            h1 {
+                color: yellow;
+                font-variant: small-caps;
+            }
+
+            #page_title {
+                text-align: right;
+            }
+
+            article>span {
+                border: 2px solid red;
+            }
+
+            footer span {
+                border: 3px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Group into page header: https://www.w3schools.com/tags/tag_header.asp-->
+        <header id="page_title">
+            <h1 style="border: 2px solid black;">Bill Gates</h1>
+            <p>Celebrating the birthday one of the biggest names in the modern world.</p>
+            <nav>
+                <ul>
+                    <li><a href="#page_title">Homepage</a></li>
+                    <li><a href="./sites/biography.html">Biography</a></li>
+                    <li><a href="./sites/business-timeline.html">Business Timeline</a></li>
+                    <li><a href="./sites/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <!-- 
+            
+            body 100%
+            |-main 100%
+            |-|-div 50%
+            |-|-|-p 50%
+
+            -->
+            <div style="width: 50%; border: 2px solid green;">
+                <p style="width: 50%; border: 2px solid red;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio nisi aspernatur ad sint tempora, ab reprehenderit fugit! Adipisci amet, qui officia dicta impedit facere molestiae maiores illo reprehenderit nemo!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, laboriosam! Nostrum quis sed quia ea maiores praesentium itaque beatae eum, quisquam esse rem, magni magnam aspernatur possimus amet quasi! Commodi?
+                </p>
+                <p style="width: 1000px; border: 2px solid red;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio nisi aspernatur ad sint tempora, ab reprehenderit fugit! Adipisci amet, qui officia dicta impedit facere molestiae maiores illo reprehenderit nemo!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, laboriosam! Nostrum quis sed quia ea maiores praesentium itaque beatae eum, quisquam esse rem, magni magnam aspernatur possimus amet quasi! Commodi?
+                </p>
+            </div>
+            <section>
+                <article>
+                    <header>
+                        <h2 class="center">
+                            About Bill
+                        </h2>
+                        <span><em>Who is Bill Gates?</em></span>
+                    </header>
+                    <p class="center half-width">
+                        Bill Gates is a technologist, business leader, and philanthropist. He grew up in Seattle, Washington, with an amazing and supportive family who encouraged his interest in computers at an early age. He dropped out of college to start Microsoft with his childhood friend Paul Allen. Today, Bill co-chairs the Bill & Melinda Gates Foundation with Melinda French Gates, where he works to give his wealth back to society.
+                    </p>
+                </article>
+                <article class="right">
+                    <h2>
+                        About Microsoft
+                    </h2>
+                    <p>
+                        When Bill and Paul Allen started Microsoft, their vision of “a computer on every desktop and in every home” seemed farfetched to most people. Today, thanks to Microsoft and many other companies, that vision is a reality in many parts of the world, and personal technology is an integral part of society.
+                    </p>
+                    <p>
+                        Bill is passionate about Microsoft’s work and will always be involved with the company, including his present role as a member of the board and technology advisor.
+                    </p>
+                </article>
+                <article>
+                    <h2>
+                        Other Interests
+                    </h2>
+                    <p class="right">
+                        In addition to the foundation’s work, Bill has separately taken on some projects to address issues that interest him personally, such as delivering clean energy to everyone who needs it.
+                    </p>
+                    <p>
+                        In all his work—with the foundation and otherwise—he’s focused on what he calls catalytic philanthropy: investments in innovations that will improve life for the poorest. They’re solutions to problems where markets and governments underinvest.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <aside>
+                <h2>Famous Birthdays on October 28th</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates id corporis sed, praesentium voluptatum velit iusto, 
+                    quibusdam doloremque iste sunt maxime nisi illo nostrum nihil at cumque, quas quod ut.
+                </p>
+                <a href="https://www.famousbirthdays.com/">Check out other famous birthdays here!</a>
+            </aside>
+            <hr>
+            <!-- Embed Tag: https://www.w3schools.com/tags/att_embed_type.asp -->
+            <article>
+                <figure>
+                    <img src="./resources/images/news02.jpeg" alt="Bill Gates">
+                    <figcaption>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </span>
+                    </figcaption>
+                    <span>
+                        <a href="https://www.independent.co.uk/news/world/americas/bill-gates-microsoft-female-employee-b1940370.html ">Link to original article.</a>
+                    </span>
+                </figure>
+                <embed src="./resources/news/news1.html" type="text/html" width="100%" height="350px">
+            </article>
+            <hr>
+            <article>
+                <img src="./resources/images/news01.jpeg" alt="Elon Musk">
+                <figcaption>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+                </figcaption>
+                <span>
+                    <a href="https://www.independent.co.uk/money/elon-musk-richest-man-fortune-b1939951.html ">
+                        Link to original article.
+                    </a>
+                </span>
+            </article>
+            <embed src="./resources/news/news2.html" type="text/html" width="100%" height="350px">
+        </main>
+        <hr>
+        <!-- Group into page footer: https://www.w3schools.com/tags/tag_footer.asp-->
+        <footer>
+            <a href="#page_title">Back to Top</a>
+            <span>28. Oktobar, 2021.</span>
+        </footer>
+    </body>
+</html>

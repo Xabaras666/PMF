@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Page</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a beginner website">
+	</head>
+	
+	<body>
+		<header> <!--It is important to separate the site in tags like
+		 header,main, footer,article, section, aside and others for better organisation. -->
+			<nav>
+			<a href= #page_title> Homepage</a>
+			<a href= "../vjezba/sites/gallery.html"> Gallery</a>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>This is a header</h1>
+			<hr>
+			<article>
+				<h2>This is a header in an article</h2>
+				<p>And this is a paragraph that is inside an
+				 article tag. 
+				This article is inside the main tag. It is used to
+				 separate articles</p>
+				<section>
+					<h3>This is a header 3 in a section.</h3>
+					<a href="https://www.youtube.com/watch
+					?v=pQN-pnXPaVg&t=2918s">This is a
+					 link for the turorial video and it is
+					  stored in a section.</a>
+					<aside>This is an aside tag and its used
+					 for presenting something 
+					that isnt related to the article.</aside>
+				</section>
+			</article>
+			<hr>
+			<article>
+				<section>
+					<h3>Links</h3>
+
+					<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg&t=2918s">Ovo je link za video.</a>
+					<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg&t=2918s"><h1>Ovo je link unutar headera</h1></a>
+					<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg&t=2918s" target="_blank">Ovaj link se otvara u zasebnom prozodu.</a>
+					<a href="resources/images/cat1.jpeg"><p>Cat1</p></a>	<!--You can link files as well as .html documents-->
+				</section>
+				
+				<section>
+					<h3>Images</h3>
+					<img width="50%"  src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=620&quality=85&auto=format&fit=max&s=21718fb1379918410ea10054db89f665"  alt="cat image" />
+					<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg&t=2918s"><img width="50%" src="resources/images/cat1.jpeg" alt="cat1 picture" /></a>
+					<br>
+					<span>By clicking on this image it will lead you to a youtube video</span>
+				</section>
+				
+				<section>
+					<h3> Videos</h3>
+					<video width="90%" src="resources/videos/cat.mp4" poster="resources/images/cat_thumbnail.jpg" controls>This is the text that displays if video fails.</video>
+					<video width="90%" src="resources/videos/cat.mp4" loop
+					 controls>This is the text that displays if video fails.</video>
+					 
+					 <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+				
+				<section>
+					<h3>Unordered lists</h3>
+					<ul>
+						<li>apple</li>
+						<li>oranges</li>
+						<li>ananas</li>
+					</ul>
+					
+					<ul type="A">
+						<li>apple</li>
+						<li>oranges</li>
+						<ul type="I">
+							<li>apple</li>
+							<li>oranges</li>
+							<li>ananas</li>
+						</ul>
+						<li>ananas</li>
+					</ul>
+					
+					<ul type="I">
+						<li>apple</li>
+						<li>oranges</li>
+						<li>ananas</li>
+					</ul>
+					
+					<h3>Ordered lists</h3>
+					<ol>
+						<li>apple</li>
+						<li>oranges</li>
+						<li>ananas</li>
+					</ol>
+				</section>
+			</article>
+			
+			<article>
+				<section>
+					<h3>Tables</h3>
+					
+					<table>
+						<thead>
+							<caption><h4>List of Numbers</h4></caption>
+							<tr>
+								<th>num1</th>
+								<th>num2</th>
+								<th>num3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="2">One</td>
+								<td>Two</td>
+								<td>Three</td>
+							</tr>
+							<tr>
+								<td>Four</td>
+								<td>Five</td>
+								<td>Six</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</section>
+			</article>
+		 
+		</main>
+		<hr>
+		<footer>
+			<p>This is a paragraph in the footer</p>
+		</footer>
+<!-- This is a comment. -->	
+	
+	
+	
+	</body>
+</html>

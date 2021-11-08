@@ -1,0 +1,8 @@
+a = input('Unesite broj:')
+b = int(a)
+c = float(a)
+d = str(c)
+e = type(a)
+f = abs(b)
+g = range(2, 7)
+print(a, b, c, d, e, f, g, sep='\n')

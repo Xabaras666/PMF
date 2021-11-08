@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- Group into page header: https://www.w3schools.com/tags/tag_header.asp-->
+        <header id="page_title">
+            <h1>Bill Gates</h1>
+            <p>Celebrating the birthday one of the biggest names in the modern world.</p>
+            <!-- Nav Tag: https://www.w3schools.com/tags/tag_nav.asp -->
+            <!--
+                Korisniji nacin za kreiranje horizontalnog navigacijskog menija.
+                <nav>
+                    <a href=""></a>
+                    <a href=""></a>
+                </nav>
+            -->
+            <nav>
+                <ul>
+                    <li><a href="#page_title">Homepage</a></li>
+                    <li><a href="./sites/biography.html">Biography</a></li>
+                    <li><a href="./sites/business-timeline.html">Business Timeline</a></li>
+                    <li><a href="./sites/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <!-- 
+                1. Create a collection of sections from https://www.gatesnotes.com/Bio
+                2. Create an aside section with content related to other scientist having their birthday on October 28th.
+                3. Embed news from resources/news/ files.
+            -->
+            <section>
+                <article>
+                    <h2>Who is Bill Gates?</h2>
+                    <p>
+                        Bill Gates is a technologist, business leader, and philanthropist. 
+                        He grew up in Seattle, Washington, with an amazing and supportive family who encouraged his 
+                        interest in computers at an early age. He dropped out of college to start Microsoft with his 
+                        childhood friend Paul Allen. Today, Bill co-chairs the Bill & Melinda Gates Foundation with 
+                        Melinda French Gates, where he works to give his wealth back to society.
+                    </p>
+                </article>
+                <article>
+                    <h2>About Microsoft</h2>
+                    <p>
+                        When Bill and Paul Allen started Microsoft, their vision of “a computer on every desktop and in every home”
+                         seemed farfetched to most people. Today, thanks to Microsoft and many other companies, 
+                         that vision is a reality in many parts of the world, and personal technology is an integral part of society.
+                    </p>
+                    <p>
+                        Bill is passionate about Microsoft’s work and will always be involved with the company, including his present 
+                        role as a member of the board and technology advisor.
+                    </p>
+                </article>
+                <article>
+                    <h2>Other Interests</h2>
+                    <p>
+                        In addition to the foundation’s work, Bill has separately taken on some projects to address issues that interest 
+                        him personally, such as delivering clean energy to everyone who needs it.
+                    </p>
+                    <p>
+                        In all his work—with the foundation and otherwise—he’s focused on what he calls catalytic philanthropy: 
+                        investments in innovations that will improve life for the poorest. 
+                        They’re solutions to problems where markets and governments underinvest.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <aside>
+                <p><strong></strong> Other famous birthdays today.</p>
+                <a href="https://www.famousbirthdays.com/"></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum exercitationem ipsam eveniet libero, perspiciatis a, natus modi quaerat, 
+                    itaque accusantium dolorum obcaecati vel! Dolore dignissimos quis accusantium totam id in!
+                </p>
+            </aside>
+            <hr>
+            <!-- Embed Tag: https://www.w3schools.com/tags/att_embed_type.asp -->
+            <article>
+                <figure>
+                    <img src="./resources/images/news02.jpeg" alt="Bill Gates">
+                    <figcaption>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, adipisci dolores.</p>
+                        <a href="https://www.independent.co.uk/news/world/americas/bill-gates-microsoft-female-employee-b1940370.html ">
+                            Original article.
+                        </a>
+                    </figcaption>
+                </figure>
+                <embed src="./resources/news/news1.html" type="text/html" width="100%" height="75%">
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <img src="./resources/images/news01.jpeg" alt="Elon Musk">
+                    <figcaption>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, adipisci dolores.</p>
+                        <a href="https://www.independent.co.uk/money/elon-musk-richest-man-fortune-b1939951.html ">
+                            Original article.
+                        </a>
+                    </figcaption>
+                </figure>
+                <embed src="./resources/news/news2.html" type="text/html" width="100%" height="75%">
+            </article>
+            <hr>
+
+        </main>
+
+        <!-- Group into page footer: https://www.w3schools.com/tags/tag_footer.asp-->
+        <!-- HTML id attribute: https://www.w3schools.com/html/html_id.asp -->
+        <footer>
+            <a href="#page_title">Back to top</a> | 
+            <span>28. Oktobar, 2021.</span>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+
+header {
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+p {
+    color: red;
+    font-size: medium;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green;
+}
+
+h2.center {
+    height: 100px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.right {
+    border: 1px solid red;
+}
+
+article.right {
+    border: 2px solid purple;
+}
+
+.right p {
+    text-align: right;
+}
+
+p.right {
+    color: yellow;
+}
+
+.right h2 {
+    font-variant: small-caps;
+}
+
